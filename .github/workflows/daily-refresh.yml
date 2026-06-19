@@ -1,0 +1,59 @@
+name: Daily Goodreads refresh
+
+on:
+  schedule:
+    - cron: "24 6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    env:
+      GOODREADS_RSS_URL: ${{ vars.GOODREADS_RSS_URL }}
+      GOODREADS_USER_ID: ${{ vars.GOODREADS_USER_ID }}
+      GOODREADS_SHELF: ${{ vars.GOODREADS_SHELF }}
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ vars.CLOUDFLARE_ACCOUNT_ID || secrets.CLOUDFLARE_ACCOUNT_ID }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Refresh Goodreads data
+        run: npm run refresh:goodreads
+
+      - name: Commit data changes
+        run: |
+          if git diff --quiet -- src/data/books.json; then
+            echo "No Goodreads data changes to commit."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/data/books.json
+          git commit -m "Refresh Goodreads data"
+          git push
+
+      - name: Build
+        run: npm run build
+
+      - name: Deploy to Cloudflare
+        if: env.CLOUDFLARE_API_TOKEN != '' && env.CLOUDFLARE_ACCOUNT_ID != ''
+        run: npx wrangler deploy
+
+      - name: Skip Cloudflare deploy
+        if: env.CLOUDFLARE_API_TOKEN == '' || env.CLOUDFLARE_ACCOUNT_ID == ''
+        run: echo "Add CLOUDFLARE_API_TOKEN and CLOUDFLARE_ACCOUNT_ID secrets to deploy from GitHub Actions."

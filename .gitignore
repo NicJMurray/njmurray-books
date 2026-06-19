@@ -1,0 +1,7 @@
+node_modules/
+.wrangler/
+.publish/
+dist/
+data/*.csv
+.dev.vars
+*.log

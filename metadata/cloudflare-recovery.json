@@ -1,0 +1,28 @@
+{
+  "recoveredAt": "2026-06-19",
+  "accountName": "Nicjmurray99@gmail.com's Account",
+  "worker": {
+    "name": "njmurray-books",
+    "createdOn": "2026-05-05T16:24:57.596073Z",
+    "modifiedOn": "2026-05-05T22:15:41.298904Z",
+    "compatibilityDate": "2026-05-05",
+    "routes": [
+      "njmurray.com/books",
+      "njmurray.com/books/*"
+    ],
+    "bindings": {
+      "assets": "ASSETS"
+    }
+  },
+  "sourceUrls": {
+    "page": "https://njmurray.com/books/",
+    "script": "https://njmurray.com/books/assets/index-LkLfaN6R.js",
+    "stylesheet": "https://njmurray.com/books/assets/index-D9-p065u.css"
+  },
+  "notes": [
+    "Worker script downloaded through the Cloudflare Workers API.",
+    "Static assets fetched from the public route.",
+    "JavaScript and CSS source maps returned 404.",
+    "No KV, R2, service, queue, var, durable object, or cron bindings were configured for this Worker."
+  ]
+}

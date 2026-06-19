@@ -1,0 +1,38 @@
+--2f2daa08776e01889f37eafab0aa9f211ee9a94db6b119fbcad0be14eb9f
+Content-Disposition: form-data; name="index.js"
+
+var __defProp = Object.defineProperty;
+var __name = (target, value) => __defProp(target, "name", { value, configurable: true });
+
+// worker/index.js
+var BOOKS_PREFIX = "/books";
+var index_default = {
+  async fetch(request, env) {
+    const url = new URL(request.url);
+    if (url.pathname === BOOKS_PREFIX) {
+      url.pathname = `${BOOKS_PREFIX}/`;
+      return Response.redirect(url.toString(), 308);
+    }
+    if (!url.pathname.startsWith(`${BOOKS_PREFIX}/`)) {
+      return new Response("Not Found", { status: 404 });
+    }
+    const assetUrl = new URL(request.url);
+    assetUrl.pathname = url.pathname.slice(BOOKS_PREFIX.length) || "/";
+    const assetResponse = await env.ASSETS.fetch(new Request(assetUrl, request));
+    if (assetResponse.status !== 404 || hasFileExtension(assetUrl.pathname)) {
+      return assetResponse;
+    }
+    assetUrl.pathname = "/index.html";
+    return env.ASSETS.fetch(new Request(assetUrl, request));
+  }
+};
+function hasFileExtension(pathname) {
+  return /\/[^/]+\.[^/]+$/.test(pathname);
+}
+__name(hasFileExtension, "hasFileExtension");
+export {
+  index_default as default
+};
+//# sourceMappingURL=index.js.map
+
+--2f2daa08776e01889f37eafab0aa9f211ee9a94db6b119fbcad0be14eb9f--
