@@ -6,6 +6,7 @@ import { XMLParser } from "fast-xml-parser";
 const BOOKS_PATH = "src/data/books.json";
 const DEFAULT_CSV_PATH = "data/goodreads_library_export.csv";
 const DEFAULT_SHELF = "read";
+const DEFAULT_GOODREADS_LIST_URL = "https://www.goodreads.com/review/list/89023673?shelf=read";
 
 const args = new Map();
 for (let index = 2; index < process.argv.length; index += 1) {
@@ -23,6 +24,11 @@ for (let index = 2; index < process.argv.length; index += 1) {
 const rssUrl =
   args.get("--rss") ||
   process.env.GOODREADS_RSS_URL ||
+  getRssUrlFromListUrl(
+    args.get("--list") ||
+      process.env.GOODREADS_LIST_URL ||
+      DEFAULT_GOODREADS_LIST_URL,
+  ) ||
   getRssUrlFromUserId(process.env.GOODREADS_USER_ID, process.env.GOODREADS_SHELF);
 
 const csvPath = args.get("--csv") || process.env.GOODREADS_CSV_PATH;
@@ -52,7 +58,7 @@ if (rssUrl) {
 
 if (importedCount === 0) {
   console.log(
-    "No Goodreads source configured. Set GOODREADS_RSS_URL, GOODREADS_USER_ID, or pass --csv.",
+    "No Goodreads source configured. Set GOODREADS_LIST_URL, GOODREADS_RSS_URL, GOODREADS_USER_ID, or pass --csv.",
   );
   process.exit(0);
 }
@@ -79,6 +85,16 @@ function getRssUrlFromUserId(userId, shelf = DEFAULT_SHELF) {
   return `https://www.goodreads.com/review/list_rss/${encodeURIComponent(
     userId,
   )}?shelf=${encodeURIComponent(shelf || DEFAULT_SHELF)}`;
+}
+
+function getRssUrlFromListUrl(listUrl) {
+  if (!listUrl) return "";
+  const url = new URL(listUrl);
+  const userId = url.pathname.match(/\/review\/list\/(\d+)/)?.[1];
+  if (!userId) return "";
+
+  const shelf = url.searchParams.get("shelf") || DEFAULT_SHELF;
+  return getRssUrlFromUserId(userId, shelf);
 }
 
 async function readGoodreadsCsv(filePath) {
@@ -176,6 +192,7 @@ function normalizeRssBook(item) {
     isbn,
     isbn13,
     rating: toNumber(item.user_rating),
+    pageCount: toNumber(item.book?.num_pages),
     yearPublished: toNumber(item.book_published),
     dateRead: toDate(item.user_read_at),
     dateAdded: toDate(item.user_date_added || item.pubDate),

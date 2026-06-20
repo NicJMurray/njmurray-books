@@ -12,6 +12,7 @@ jobs:
   refresh:
     runs-on: ubuntu-latest
     env:
+      GOODREADS_LIST_URL: ${{ vars.GOODREADS_LIST_URL }}
       GOODREADS_RSS_URL: ${{ vars.GOODREADS_RSS_URL }}
       GOODREADS_USER_ID: ${{ vars.GOODREADS_USER_ID }}
       GOODREADS_SHELF: ${{ vars.GOODREADS_SHELF }}

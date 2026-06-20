@@ -1,5 +1,94 @@
 [
   {
+    "id": "18373",
+    "goodreadsId": "18373",
+    "title": "Flowers for Algernon",
+    "shortTitle": "Flowers for Algernon",
+    "author": "Daniel Keyes",
+    "isbn": "015603008X",
+    "rating": 3,
+    "pageCount": 311,
+    "yearPublished": 1966,
+    "dateRead": "2026-06-20",
+    "dateAdded": "2026-06-20",
+    "readCount": 1,
+    "remoteCover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1689071681l/18373.jpg"
+  },
+  {
+    "id": "49090884",
+    "goodreadsId": "49090884",
+    "title": "Tender Is the Flesh",
+    "shortTitle": "Tender Is the Flesh",
+    "author": "Agustina Bazterrica",
+    "rating": 3,
+    "pageCount": 209,
+    "yearPublished": 2017,
+    "dateRead": "2026-06-14",
+    "dateAdded": "2026-06-15",
+    "readCount": 1,
+    "remoteCover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1594563107l/49090884.jpg"
+  },
+  {
+    "id": "52258",
+    "goodreadsId": "52258",
+    "title": "The Price of Salt",
+    "shortTitle": "The Price of Salt",
+    "author": "Claire  Morgan",
+    "isbn": "0393325997",
+    "rating": 3,
+    "pageCount": 262,
+    "yearPublished": 1952,
+    "dateRead": "2026-06-13",
+    "dateAdded": "2026-06-13",
+    "readCount": 1,
+    "remoteCover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1628139806l/52258._SY475_.jpg"
+  },
+  {
+    "id": "223296158",
+    "goodreadsId": "223296158",
+    "title": "Slow Gods",
+    "shortTitle": "Slow Gods",
+    "author": "Claire North",
+    "isbn": "0316586307",
+    "rating": 3,
+    "pageCount": 438,
+    "yearPublished": 2025,
+    "dateRead": "2026-05-27",
+    "dateAdded": "2026-05-27",
+    "readCount": 1,
+    "remoteCover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1740714031l/223296158._SY475_.jpg"
+  },
+  {
+    "id": "54120408",
+    "goodreadsId": "54120408",
+    "title": "Klara and the Sun",
+    "shortTitle": "Klara and the Sun",
+    "author": "Kazuo Ishiguro",
+    "isbn": "059331817X",
+    "rating": 4,
+    "pageCount": 303,
+    "yearPublished": 2021,
+    "dateRead": "2026-05-14",
+    "dateAdded": "2026-05-14",
+    "readCount": 1,
+    "remoteCover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1603206535l/54120408._SY475_.jpg"
+  },
+  {
+    "id": "152034931",
+    "goodreadsId": "152034931",
+    "title": "Unruly: The Ridiculous History of England's Kings and Queens",
+    "shortTitle": "Unruly: The Ridiculous History of England's Kings and Queens",
+    "author": "David   Mitchell",
+    "isbn": "0593728491",
+    "rating": 4,
+    "pageCount": 433,
+    "yearPublished": 2023,
+    "dateRead": "2026-05-06",
+    "dateAdded": "2026-05-06",
+    "readCount": 1,
+    "remoteCover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1684764813l/152034931.jpg"
+  },
+  {
     "id": "64663899",
     "goodreadsId": "64663899",
     "title": "Cloud Atlas",
@@ -9,12 +98,30 @@
     "publisher": "Hodder & Stoughton",
     "binding": "Kindle Edition",
     "pageCount": 529,
-    "yearPublished": 2022,
+    "yearPublished": 2004,
     "originalYear": 2004,
-    "dateRead": "2026-04-18",
-    "dateAdded": "2026-03-08",
+    "dateRead": "2026-04-19",
+    "dateAdded": "2026-04-19",
     "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/id/6714077-L.jpg"
+    "remoteCover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1670576352l/64663899._SY475_.jpg"
+  },
+  {
+    "id": "49628",
+    "goodreadsId": "49628",
+    "title": "Cloud Atlas",
+    "shortTitle": "Cloud Atlas",
+    "author": "David  Mitchell",
+    "isbn": "0375507256",
+    "isbn13": "9780375507250",
+    "rating": 4,
+    "publisher": "Random House",
+    "binding": "Paperback",
+    "pageCount": 509,
+    "yearPublished": 2004,
+    "originalYear": 2004,
+    "dateAdded": "2026-04-19",
+    "readCount": 1,
+    "remoteCover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1563042852l/49628._SX318_.jpg"
   },
   {
     "id": "406235",
@@ -26,12 +133,12 @@
     "publisher": "Laurel",
     "binding": "Paperback",
     "pageCount": 178,
-    "yearPublished": 1988,
+    "yearPublished": 1956,
     "originalYear": 1956,
     "dateRead": "2026-03-06",
-    "dateAdded": "2026-02-20",
+    "dateAdded": "2026-03-06",
     "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/id/97395-L.jpg"
+    "remoteCover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1223664870l/406235.jpg"
   },
   {
     "id": "7331435",
@@ -48,9 +155,9 @@
     "yearPublished": 2010,
     "originalYear": 2010,
     "dateRead": "2026-02-20",
-    "dateAdded": "2026-01-09",
+    "dateAdded": "2026-02-20",
     "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/isbn/9780307592835-L.jpg?default=false"
+    "remoteCover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1356844046l/7331435.jpg"
   },
   {
     "id": "218427",
@@ -64,12 +171,12 @@
     "publisher": "Del Rey",
     "binding": "Paperback",
     "pageCount": 278,
-    "yearPublished": 2004,
+    "yearPublished": 1977,
     "originalYear": 1977,
     "dateRead": "2026-01-09",
-    "dateAdded": "2026-01-04",
+    "dateAdded": "2026-01-09",
     "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/isbn/9780345475831-L.jpg?default=false"
+    "remoteCover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1441698400l/218427._SY475_.jpg"
   },
   {
     "id": "5954",
@@ -84,12 +191,12 @@
     "publisher": "The Noonday Press / Farrar, Straus Giroux",
     "binding": "Paperback",
     "pageCount": 315,
-    "yearPublished": 1997,
+    "yearPublished": 1930,
     "originalYear": 1930,
-    "dateRead": "2025-08-31",
-    "dateAdded": "2025-07-06",
+    "dateRead": "2025-09-01",
+    "dateAdded": "2025-09-01",
     "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/isbn/9780374506841-L.jpg?default=false"
+    "remoteCover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1374680750l/5954.jpg"
   },
   {
     "id": "23515727",
@@ -103,12 +210,12 @@
     "publisher": "Vintage International",
     "binding": "Paperback",
     "pageCount": 309,
-    "yearPublished": 2006,
+    "yearPublished": 2005,
     "originalYear": 2005,
-    "dateRead": "2025-07-06",
-    "dateAdded": "2025-06-22",
+    "dateRead": "2025-07-07",
+    "dateAdded": "2025-07-07",
     "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/isbn/9780375706677-L.jpg?default=false"
+    "remoteCover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1740778210l/23515727._SY475_.jpg"
   },
   {
     "id": "58376",
@@ -122,12 +229,12 @@
     "publisher": "Vintage",
     "binding": "Paperback",
     "pageCount": 87,
-    "yearPublished": 2004,
+    "yearPublished": 2000,
     "originalYear": 2000,
-    "dateRead": "2025-05-19",
-    "dateAdded": "2025-05-18",
+    "dateRead": "2025-05-20",
+    "dateAdded": "2025-05-20",
     "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/isbn/9780099448365-L.jpg?default=false"
+    "remoteCover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1387040812l/58376.jpg"
   },
   {
     "id": "258392",
@@ -141,12 +248,12 @@
     "publisher": "Vintage",
     "binding": "Paperback",
     "pageCount": 505,
-    "yearPublished": 1998,
+    "yearPublished": 1950,
     "originalYear": 1950,
-    "dateRead": "2025-05-18",
-    "dateAdded": "2025-04-23",
+    "dateRead": "2025-05-19",
+    "dateAdded": "2025-05-19",
     "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/isbn/9780749394820-L.jpg?default=false"
+    "remoteCover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1480786154l/258392._SY475_.jpg"
   },
   {
     "id": "39063",
@@ -160,12 +267,12 @@
     "publisher": "Overlook Press",
     "binding": "Paperback",
     "pageCount": 396,
-    "yearPublished": 1991,
+    "yearPublished": 1946,
     "originalYear": 1946,
-    "dateRead": "2025-04-23",
-    "dateAdded": "2025-03-26",
+    "dateRead": "2025-04-24",
+    "dateAdded": "2025-04-24",
     "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/isbn/9780879514259-L.jpg?default=false"
+    "remoteCover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1327871204l/39063.jpg"
   },
   {
     "id": "36402034",
@@ -177,18 +284,18 @@
     "publisher": "Ballantine Books",
     "binding": "ebook",
     "pageCount": 258,
-    "yearPublished": 2008,
+    "yearPublished": 1968,
     "originalYear": 1968,
     "dateRead": "2025-03-26",
-    "dateAdded": "2025-03-25",
+    "dateAdded": "2025-03-26",
     "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/id/207515-L.jpg"
+    "remoteCover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1507838927l/36402034._SY475_.jpg"
   },
   {
     "id": "5552",
     "goodreadsId": "5552",
     "title": "QED: The Strange Theory of Light and Matter",
-    "shortTitle": "QED",
+    "shortTitle": "QED: The Strange Theory of Light and Matter",
     "author": "Richard P. Feynman",
     "isbn": "0691024170",
     "isbn13": "9780691024172",
@@ -196,12 +303,12 @@
     "publisher": "Princeton University Press",
     "binding": "Paperback",
     "pageCount": 176,
-    "yearPublished": 1988,
+    "yearPublished": 1985,
     "originalYear": 1985,
     "dateRead": "2025-03-21",
-    "dateAdded": "2025-02-11",
+    "dateAdded": "2025-03-21",
     "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/isbn/9780691024172-L.jpg?default=false"
+    "remoteCover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1386920718l/5552.jpg"
   },
   {
     "id": "117833",
@@ -216,12 +323,12 @@
     "publisher": "Vintage International",
     "binding": "Paperback",
     "pageCount": 372,
-    "yearPublished": 1996,
+    "yearPublished": 1967,
     "originalYear": 1967,
     "dateRead": "2025-02-03",
-    "dateAdded": "2024-01-20",
+    "dateAdded": "2025-02-03",
     "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/isbn/9780679760801-L.jpg?default=false"
+    "remoteCover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1327867963l/117833.jpg"
   },
   {
     "id": "11297",
@@ -234,12 +341,12 @@
     "publisher": "Vintage Books",
     "binding": "Paperback",
     "pageCount": 296,
-    "yearPublished": 2000,
+    "yearPublished": 1987,
     "originalYear": 1987,
     "dateRead": "2024-12-28",
-    "dateAdded": "2024-12-18",
+    "dateAdded": "2024-12-28",
     "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/id/2237620-L.jpg"
+    "remoteCover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1713542603l/11297._SY475_.jpg"
   },
   {
     "id": "16631",
@@ -254,12 +361,12 @@
     "publisher": "Penguin",
     "binding": "Paperback",
     "pageCount": 256,
-    "yearPublished": 1999,
+    "yearPublished": 1927,
     "originalYear": 1927,
     "dateRead": "2024-12-18",
-    "dateAdded": "2024-12-02",
+    "dateAdded": "2024-12-18",
     "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/isbn/9780140282580-L.jpg?default=false"
+    "remoteCover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1389332672l/16631.jpg"
   },
   {
     "id": "6194",
@@ -273,12 +380,12 @@
     "publisher": "Penguin Books",
     "binding": "Paperback",
     "pageCount": 152,
-    "yearPublished": 1999,
+    "yearPublished": 1980,
     "originalYear": 1980,
     "dateRead": "2024-11-26",
-    "dateAdded": "2024-11-20",
+    "dateAdded": "2024-11-26",
     "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/isbn/9780140283358-L.jpg?default=false"
+    "remoteCover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1330879044l/6194.jpg"
   },
   {
     "id": "9717",
@@ -293,12 +400,12 @@
     "publisher": "Harper Perennial",
     "binding": "Paperback",
     "pageCount": 314,
-    "yearPublished": 2009,
+    "yearPublished": 1984,
     "originalYear": 1984,
     "dateRead": "2024-11-09",
-    "dateAdded": "2021-08-05",
+    "dateAdded": "2024-11-09",
     "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/isbn/9780571224388-L.jpg?default=false"
+    "remoteCover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1265401884l/9717.jpg"
   },
   {
     "id": "310612",
@@ -313,12 +420,12 @@
     "publisher": "Grove Press",
     "binding": "Paperback",
     "pageCount": 394,
-    "yearPublished": 1994,
+    "yearPublished": 1980,
     "originalYear": 1980,
-    "dateRead": "2024-10-19",
-    "dateAdded": "2024-01-07",
+    "dateRead": "2024-10-20",
+    "dateAdded": "2024-10-20",
     "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/isbn/9780802130204-L.jpg?default=false"
+    "remoteCover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1562554946l/310612._SY475_.jpg"
   },
   {
     "id": "9265453",
@@ -334,16 +441,16 @@
     "pageCount": 345,
     "yearPublished": 2011,
     "originalYear": 2011,
-    "dateRead": "2024-10-06",
-    "dateAdded": "2021-11-28",
+    "dateRead": "2024-10-07",
+    "dateAdded": "2024-10-07",
     "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/isbn/9780345524492-L.jpg?default=false"
+    "remoteCover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1320470326l/9265453.jpg"
   },
   {
     "id": "64582",
     "goodreadsId": "64582",
     "title": "Chaos: Making a New Science",
-    "shortTitle": "Chaos",
+    "shortTitle": "Chaos: Making a New Science",
     "author": "James Gleick",
     "isbn": "0140092501",
     "isbn13": "9780140092509",
@@ -351,12 +458,12 @@
     "publisher": "Penguin Group",
     "binding": "Paperback",
     "pageCount": 352,
-    "yearPublished": 1988,
+    "yearPublished": 1987,
     "originalYear": 1987,
-    "dateRead": "2024-09-26",
-    "dateAdded": "2024-06-15",
+    "dateRead": "2024-09-27",
+    "dateAdded": "2024-09-27",
     "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/isbn/9780140092509-L.jpg?default=false"
+    "remoteCover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1327941595l/64582.jpg"
   },
   {
     "id": "299758",
@@ -372,10 +479,10 @@
     "pageCount": 330,
     "yearPublished": 1983,
     "originalYear": 1983,
-    "dateRead": "2024-09-03",
-    "dateAdded": "2024-07-30",
+    "dateRead": "2024-09-04",
+    "dateAdded": "2024-09-04",
     "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/isbn/9780671496661-L.jpg?default=false"
+    "remoteCover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1332036031l/299758.jpg"
   },
   {
     "id": "463378",
@@ -389,12 +496,12 @@
     "publisher": "Timescape Books",
     "binding": "Hardcover",
     "pageCount": 279,
-    "yearPublished": 1981,
+    "yearPublished": 1982,
     "originalYear": 1982,
-    "dateRead": "2024-07-30",
-    "dateAdded": "2024-07-15",
+    "dateRead": "2024-07-31",
+    "dateAdded": "2024-07-31",
     "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/id/3327784-L.jpg"
+    "remoteCover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1329650171l/463378.jpg"
   },
   {
     "id": "40656712",
@@ -406,12 +513,12 @@
     "publisher": "Random House",
     "binding": "Kindle Edition",
     "pageCount": 337,
-    "yearPublished": 2010,
+    "yearPublished": 1960,
     "originalYear": 1960,
-    "dateRead": "2024-07-15",
-    "dateAdded": "2024-06-13",
+    "dateRead": "2024-07-16",
+    "dateAdded": "2024-07-16",
     "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/id/13028851-L.jpg"
+    "remoteCover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1530116550l/40656712.jpg"
   },
   {
     "id": "5297",
@@ -424,12 +531,12 @@
     "publisher": "Random House: Modern Library",
     "binding": "Paperback",
     "pageCount": 272,
-    "yearPublished": 2004,
+    "yearPublished": 1890,
     "originalYear": 1890,
-    "dateRead": "2024-06-11",
-    "dateAdded": "2024-01-20",
+    "dateRead": "2024-06-12",
+    "dateAdded": "2024-06-12",
     "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/id/14314858-L.jpg"
+    "remoteCover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1546103428l/5297.jpg"
   },
   {
     "id": "17690",
@@ -442,12 +549,12 @@
     "publisher": "Vintage",
     "binding": "Paperback",
     "pageCount": 255,
-    "yearPublished": 2001,
+    "yearPublished": 1925,
     "originalYear": 1925,
-    "dateRead": "2024-05-31",
-    "dateAdded": "2022-02-25",
+    "dateRead": "2024-06-01",
+    "dateAdded": "2024-06-01",
     "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/id/14910748-L.jpg"
+    "remoteCover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1320399438l/17690.jpg"
   },
   {
     "id": "400",
@@ -461,12 +568,12 @@
     "publisher": "Penguin",
     "binding": "Paperback",
     "pageCount": 480,
-    "yearPublished": 1991,
+    "yearPublished": 1988,
     "originalYear": 1988,
-    "dateRead": "2024-05-26",
-    "dateAdded": "2022-03-26",
+    "dateRead": "2024-05-27",
+    "dateAdded": "2024-05-27",
     "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/isbn/9780140156041-L.jpg?default=false"
+    "remoteCover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1327935630l/400.jpg"
   },
   {
     "id": "463376",
@@ -480,12 +587,12 @@
     "publisher": "Pocket",
     "binding": "Paperback",
     "pageCount": 303,
-    "yearPublished": 1982,
+    "yearPublished": 1981,
     "originalYear": 1981,
-    "dateRead": "2024-04-01",
-    "dateAdded": "2024-03-25",
+    "dateRead": "2024-04-02",
+    "dateAdded": "2024-04-02",
     "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/isbn/9780671416164-L.jpg?default=false"
+    "remoteCover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1332036282l/463376.jpg"
   },
   {
     "id": "60211",
@@ -499,12 +606,12 @@
     "publisher": "Pocket",
     "binding": "Paperback",
     "pageCount": 262,
-    "yearPublished": 1984,
+    "yearPublished": 1980,
     "originalYear": 1980,
     "dateRead": "2024-03-25",
-    "dateAdded": "2024-01-06",
+    "dateAdded": "2024-03-25",
     "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/id/7029509-L.jpg"
+    "remoteCover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1329650008l/60211.jpg"
   },
   {
     "id": "10799",
@@ -518,12 +625,12 @@
     "publisher": "Arrow Books",
     "binding": "Paperback",
     "pageCount": 304,
-    "yearPublished": 2004,
+    "yearPublished": 1929,
     "originalYear": 1929,
     "dateRead": "2024-03-08",
-    "dateAdded": "2024-02-28",
+    "dateAdded": "2024-03-08",
     "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/isbn/9780099910107-L.jpg?default=false"
+    "remoteCover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1313714836l/10799.jpg"
   },
   {
     "id": "2165",
@@ -537,12 +644,12 @@
     "publisher": "Scribner",
     "binding": "Hardcover",
     "pageCount": 96,
-    "yearPublished": 1996,
+    "yearPublished": 1952,
     "originalYear": 1952,
     "dateRead": "2024-02-22",
     "dateAdded": "2024-02-22",
     "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/isbn/9780684830490-L.jpg?default=false"
+    "remoteCover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1329189714l/2165._SY475_.jpg"
   },
   {
     "id": "6443834",
@@ -559,9 +666,9 @@
     "yearPublished": 2009,
     "originalYear": 2009,
     "dateRead": "2024-02-21",
-    "dateAdded": "2024-02-15",
+    "dateAdded": "2024-08-07",
     "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/id/12503077-L.jpg"
+    "remoteCover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1329955413l/6443834.jpg"
   },
   {
     "id": "63697",
@@ -573,12 +680,12 @@
     "publisher": "Touchstone",
     "binding": "Paperback",
     "pageCount": 243,
-    "yearPublished": 1998,
+    "yearPublished": 1985,
     "originalYear": 1985,
     "dateRead": "2024-02-14",
-    "dateAdded": "2024-02-09",
+    "dateAdded": "2024-02-14",
     "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/id/6986188-L.jpg"
+    "remoteCover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1447047702l/63697.jpg"
   },
   {
     "id": "36236124",
@@ -592,12 +699,12 @@
     "publisher": "W. W. Norton & Company",
     "binding": "Paperback",
     "pageCount": 224,
-    "yearPublished": 2018,
+    "yearPublished": 1996,
     "originalYear": 1996,
     "dateRead": "2024-02-07",
-    "dateAdded": "2024-02-04",
+    "dateAdded": "2024-02-07",
     "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/isbn/9780393355949-L.jpg?default=false"
+    "remoteCover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1558216416l/36236124._SY475_.jpg"
   },
   {
     "id": "7745",
@@ -635,9 +742,9 @@
     "yearPublished": 1991,
     "originalYear": 1991,
     "dateRead": "2024-02-02",
-    "dateAdded": "2024-01-21",
+    "dateAdded": "2024-02-02",
     "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/isbn/9780679735779-L.jpg?default=false"
+    "remoteCover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1436934349l/28676._SY475_.jpg"
   },
   {
     "id": "567678",
@@ -649,12 +756,12 @@
     "publisher": "Simon & Schuster (NYC)",
     "binding": "Paperback",
     "pageCount": 184,
-    "yearPublished": 1998,
+    "yearPublished": 1984,
     "originalYear": 1984,
     "dateRead": "2024-01-21",
-    "dateAdded": "2024-01-19",
+    "dateAdded": "2024-01-21",
     "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/id/427635-L.jpg"
+    "remoteCover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1434940562l/567678._SY475_.jpg"
   },
   {
     "id": "9712",
@@ -669,12 +776,12 @@
     "publisher": "Vintage International",
     "binding": "Paperback",
     "pageCount": 348,
-    "yearPublished": 2003,
+    "yearPublished": 1985,
     "originalYear": 1985,
     "dateRead": "2024-01-18",
-    "dateAdded": "2024-01-04",
+    "dateAdded": "2024-01-18",
     "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/isbn/9781400034680-L.jpg?default=false"
+    "remoteCover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1644691354l/9712._SY475_.jpg"
   },
   {
     "id": "310722",
@@ -689,12 +796,12 @@
     "publisher": "NYRB",
     "binding": "Paperback",
     "pageCount": 299,
-    "yearPublished": 2007,
+    "yearPublished": 1999,
     "originalYear": 1999,
     "dateRead": "2024-01-03",
-    "dateAdded": "2022-02-02",
+    "dateAdded": "2024-01-03",
     "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/isbn/9781590171967-L.jpg?default=false"
+    "remoteCover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1632586628l/310722._SY475_.jpg"
   },
   {
     "id": "17899948",
@@ -708,12 +815,12 @@
     "publisher": "Little, Brown and Company",
     "binding": "Kindle Edition",
     "pageCount": 449,
-    "yearPublished": 2013,
+    "yearPublished": 1938,
     "originalYear": 1938,
     "dateRead": "2023-12-28",
-    "dateAdded": "2022-03-27",
+    "dateAdded": "2023-12-28",
     "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/id/8238729-L.jpg"
+    "remoteCover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1386605169l/17899948.jpg"
   },
   {
     "id": "18423",
@@ -725,12 +832,12 @@
     "publisher": "Ace",
     "binding": "Paperback",
     "pageCount": 304,
-    "yearPublished": 2000,
+    "yearPublished": 1969,
     "originalYear": 1969,
     "dateRead": "2023-11-16",
-    "dateAdded": "2022-01-06",
+    "dateAdded": "2023-11-16",
     "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/id/10618463-L.jpg"
+    "remoteCover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1488213612l/18423._SY475_.jpg"
   },
   {
     "id": "18630",
@@ -744,12 +851,12 @@
     "publisher": "HarperCollins",
     "binding": "Paperback",
     "pageCount": 293,
-    "yearPublished": 1997,
+    "yearPublished": 1988,
     "originalYear": 1988,
-    "dateRead": "2023-10-15",
-    "dateAdded": "2020-10-23",
+    "dateRead": "2023-10-16",
+    "dateAdded": "2023-10-16",
     "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/isbn/9780061053566-L.jpg?default=false"
+    "remoteCover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1386922873l/18630.jpg"
   },
   {
     "id": "9328",
@@ -764,12 +871,12 @@
     "publisher": "Dial Press Trade Paperback",
     "binding": "Paperback",
     "pageCount": 448,
-    "yearPublished": 2005,
+    "yearPublished": 1982,
     "originalYear": 1982,
-    "dateRead": "2023-09-06",
-    "dateAdded": "2022-07-19",
+    "dateRead": "2023-09-07",
+    "dateAdded": "2023-09-07",
     "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/isbn/9780553383805-L.jpg?default=false"
+    "remoteCover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1621672028l/9328._SY475_.jpg"
   },
   {
     "id": "17125",
@@ -782,12 +889,12 @@
     "publisher": "Farrar, Straus and Giroux",
     "binding": "Paperback",
     "pageCount": 182,
-    "yearPublished": 2005,
+    "yearPublished": 1962,
     "originalYear": 1962,
-    "dateRead": "2023-07-01",
-    "dateAdded": "2023-06-22",
+    "dateRead": "2023-07-02",
+    "dateAdded": "2024-03-15",
     "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/id/14114850-L.jpg"
+    "remoteCover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1574794164l/17125._SY475_.jpg"
   },
   {
     "id": "8828",
@@ -801,12 +908,12 @@
     "publisher": "Black Swan",
     "binding": "Paperback",
     "pageCount": 380,
-    "yearPublished": 2003,
+    "yearPublished": 2002,
     "originalYear": 2002,
-    "dateRead": "2023-06-21",
-    "dateAdded": "2023-06-21",
+    "dateRead": "2023-06-22",
+    "dateAdded": "2023-06-22",
     "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/isbn/9780552999953-L.jpg?default=false"
+    "remoteCover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1388615036l/8828.jpg"
   },
   {
     "id": "51496",
@@ -821,18 +928,18 @@
     "publisher": "Signet Classic",
     "binding": "Mass Market Paperback",
     "pageCount": 139,
-    "yearPublished": 2003,
+    "yearPublished": 1886,
     "originalYear": 1886,
-    "dateRead": "2023-06-02",
-    "dateAdded": "2023-06-02",
+    "dateRead": "2023-06-03",
+    "dateAdded": "2023-06-03",
     "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/isbn/9780451528957-L.jpg?default=false"
+    "remoteCover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1318116526l/51496.jpg"
   },
   {
     "id": "35167685",
     "goodreadsId": "35167685",
     "title": "\"Surely You're Joking, Mr. Feynman!\": Adventures of a Curious Character",
-    "shortTitle": "\"Surely You're Joking, Mr. Feynman!\"",
+    "shortTitle": "\"Surely You're Joking, Mr. Feynman!\": Adventures of a Curious Character",
     "author": "Richard P. Feynman",
     "additionalAuthors": "Ralph Leighton, Edward Hutchings, Bill Gates",
     "isbn": "0393355624",
@@ -841,12 +948,12 @@
     "publisher": "W. W. Norton & Company",
     "binding": "Paperback",
     "pageCount": 400,
-    "yearPublished": 2018,
+    "yearPublished": 1985,
     "originalYear": 1985,
-    "dateRead": "2023-05-18",
-    "dateAdded": "2023-05-08",
+    "dateRead": "2023-05-19",
+    "dateAdded": "2023-05-19",
     "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/isbn/9780393355628-L.jpg?default=false"
+    "remoteCover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1504936953l/35167685.jpg"
   },
   {
     "id": "4671",
@@ -860,12 +967,12 @@
     "publisher": "Scribner",
     "binding": "Paperback",
     "pageCount": 180,
-    "yearPublished": 2025,
+    "yearPublished": 1925,
     "originalYear": 1925,
-    "dateRead": "2023-05-06",
-    "dateAdded": "2023-05-06",
+    "dateRead": "2023-05-07",
+    "dateAdded": "2023-05-07",
     "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/isbn/9780743273565-L.jpg?default=false"
+    "remoteCover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1738790966l/4671._SY475_.jpg"
   },
   {
     "id": "1331653",
@@ -879,10 +986,10 @@
     "pageCount": 329,
     "yearPublished": 2007,
     "originalYear": 2007,
-    "dateRead": "2023-04-30",
-    "dateAdded": "2023-04-25",
+    "dateRead": "2023-05-01",
+    "dateAdded": "2023-05-01",
     "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/id/1119880-L.jpg"
+    "remoteCover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1347617111l/1331653.jpg"
   },
   {
     "id": "5107",
@@ -896,12 +1003,12 @@
     "publisher": "Back Bay Books",
     "binding": "Paperback",
     "pageCount": 277,
-    "yearPublished": 2001,
+    "yearPublished": 1951,
     "originalYear": 1951,
-    "dateRead": "2023-04-23",
-    "dateAdded": "2023-04-21",
+    "dateRead": "2023-04-24",
+    "dateAdded": "2023-04-24",
     "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/isbn/9780316769174-L.jpg?default=false"
+    "remoteCover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1398034300l/5107.jpg"
   },
   {
     "id": "56783258",
@@ -917,10 +1024,10 @@
     "pageCount": 626,
     "yearPublished": 2021,
     "originalYear": 2021,
-    "dateRead": "2023-04-12",
-    "dateAdded": "2022-08-04",
+    "dateRead": "2023-04-13",
+    "dateAdded": "2023-04-14",
     "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/isbn/9781982168438-L.jpg?default=false"
+    "remoteCover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1618589128l/56783258._SY475_.jpg"
   },
   {
     "id": "263985",
@@ -935,12 +1042,12 @@
     "publisher": "Vintage",
     "binding": "Paperback",
     "pageCount": 352,
-    "yearPublished": 2007,
+    "yearPublished": 2005,
     "originalYear": 2005,
     "dateRead": "2022-10-31",
-    "dateAdded": "2022-10-06",
+    "dateAdded": "2022-10-31",
     "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/id/1054299-L.jpg"
+    "remoteCover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1388609079l/263985.jpg"
   },
   {
     "id": "332613",
@@ -952,12 +1059,12 @@
     "publisher": "Signet",
     "binding": "Mass Market Paperback",
     "pageCount": 325,
-    "yearPublished": 1963,
+    "yearPublished": 1962,
     "originalYear": 1962,
-    "dateRead": "2022-08-15",
-    "dateAdded": "2022-02-25",
+    "dateRead": "2022-08-16",
+    "dateAdded": "2022-08-16",
     "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/id/9272688-L.jpg"
+    "remoteCover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1516211014l/332613._SX318_.jpg"
   },
   {
     "id": "52036",
@@ -970,12 +1077,12 @@
     "publisher": "Bantam Books",
     "binding": "Mass Market Paperback",
     "pageCount": 152,
-    "yearPublished": 1981,
+    "yearPublished": 1922,
     "originalYear": 1922,
-    "dateRead": "2022-08-06",
-    "dateAdded": "2022-02-25",
+    "dateRead": "2022-08-07",
+    "dateAdded": "2022-08-08",
     "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/id/6562535-L.jpg"
+    "remoteCover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1629378189l/52036._SY475_.jpg"
   },
   {
     "id": "6514",
@@ -987,12 +1094,12 @@
     "publisher": "Harper Perennial Modern Classics",
     "binding": "Paperback",
     "pageCount": 294,
-    "yearPublished": 2006,
+    "yearPublished": 1963,
     "originalYear": 1963,
-    "dateRead": "2022-08-03",
-    "dateAdded": "2022-02-25",
+    "dateRead": "2022-08-04",
+    "dateAdded": "2022-08-04",
     "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/id/8477115-L.jpg"
+    "remoteCover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1554582218l/6514._SY475_.jpg"
   },
   {
     "id": "59924",
@@ -1006,12 +1113,12 @@
     "publisher": "Harper Perennial Modern Classics",
     "binding": "Paperback",
     "pageCount": 176,
-    "yearPublished": 2003,
+    "yearPublished": 1971,
     "originalYear": 1971,
-    "dateRead": "2022-07-30",
-    "dateAdded": "2022-02-02",
+    "dateRead": "2022-07-31",
+    "dateAdded": "2022-07-31",
     "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/isbn/9780060512743-L.jpg?default=false"
+    "remoteCover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1433084322l/59924.jpg"
   },
   {
     "id": "15783514",
@@ -1027,10 +1134,10 @@
     "pageCount": 181,
     "yearPublished": 2013,
     "originalYear": 2013,
-    "dateRead": "2022-07-29",
-    "dateAdded": "2022-07-27",
+    "dateRead": "2022-07-30",
+    "dateAdded": "2022-07-30",
     "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/isbn/9780062255655-L.jpg?default=false"
+    "remoteCover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1497098563l/15783514._SY475_.jpg"
   },
   {
     "id": "25615886",
@@ -1044,12 +1151,90 @@
     "publisher": "Grove Press",
     "binding": "Kindle Edition",
     "pageCount": 178,
-    "yearPublished": 2015,
+    "yearPublished": 1944,
     "originalYear": 1944,
-    "dateRead": "2022-07-27",
-    "dateAdded": "2022-07-19",
+    "dateRead": "2022-07-28",
+    "dateAdded": "2022-07-30",
     "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/isbn/0802190731-L.jpg?default=false"
+    "remoteCover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1442847549l/25615886._SY475_.jpg"
+  },
+  {
+    "id": "25499718",
+    "goodreadsId": "25499718",
+    "title": "Children of Time (Children of Time, #1)",
+    "shortTitle": "Children of Time",
+    "author": "Adrian Tchaikovsky",
+    "isbn": "1447273281",
+    "isbn13": "9781447273288",
+    "rating": 5,
+    "publisher": "PanMacmillan",
+    "binding": "Hardcover",
+    "pageCount": 600,
+    "yearPublished": 2015,
+    "originalYear": 2015,
+    "dateAdded": "2022-07-21",
+    "shelves": "best",
+    "readCount": 1,
+    "remoteCover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1431014197l/25499718.jpg"
+  },
+  {
+    "id": "1126719",
+    "goodreadsId": "1126719",
+    "title": "House of Suns",
+    "shortTitle": "House of Suns",
+    "author": "Alastair Reynolds",
+    "isbn": "0575099127",
+    "isbn13": "9780575099128",
+    "rating": 5,
+    "publisher": "Gollancz",
+    "binding": "Paperback",
+    "pageCount": 512,
+    "yearPublished": 2008,
+    "originalYear": 2008,
+    "dateAdded": "2022-07-21",
+    "shelves": "best",
+    "review": "4.7",
+    "readCount": 1,
+    "remoteCover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1447892903l/1126719.jpg"
+  },
+  {
+    "id": "166997",
+    "goodreadsId": "166997",
+    "title": "Stoner",
+    "shortTitle": "Stoner",
+    "author": "John  Williams",
+    "additionalAuthors": "John McGahern",
+    "isbn": "1590171993",
+    "isbn13": "9781590171998",
+    "rating": 5,
+    "publisher": "New York Review Books",
+    "binding": "Paperback",
+    "pageCount": 292,
+    "yearPublished": 1965,
+    "originalYear": 1965,
+    "dateAdded": "2022-07-21",
+    "shelves": "best",
+    "review": "5",
+    "readCount": 1,
+    "remoteCover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1742326950l/166997._SY475_.jpg"
+  },
+  {
+    "id": "20518872",
+    "goodreadsId": "20518872",
+    "title": "The Three-Body Problem (Remembrance of Earth’s Past, #1)",
+    "shortTitle": "The Three-Body Problem",
+    "author": "Liu Cixin",
+    "additionalAuthors": "Ken Liu",
+    "rating": 5,
+    "publisher": "Tor Books",
+    "binding": "Hardcover",
+    "pageCount": 472,
+    "yearPublished": 2006,
+    "originalYear": 2006,
+    "dateAdded": "2022-07-21",
+    "shelves": "best",
+    "readCount": 1,
+    "remoteCover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1415428227l/20518872.jpg"
   },
   {
     "id": "320",
@@ -1062,13 +1247,13 @@
     "publisher": "Harper",
     "binding": "Mass Market Paperback",
     "pageCount": 417,
-    "yearPublished": 2003,
+    "yearPublished": 1967,
     "originalYear": 1967,
-    "dateRead": "2022-07-19",
-    "dateAdded": "2022-07-14",
+    "dateRead": "2022-07-20",
+    "dateAdded": "2022-07-21",
     "shelves": "best",
     "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/id/15185412-L.jpg"
+    "remoteCover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1327881361l/320.jpg"
   },
   {
     "id": "17333223",
@@ -1084,10 +1269,10 @@
     "pageCount": 771,
     "yearPublished": 2013,
     "originalYear": 2013,
-    "dateRead": "2022-07-13",
-    "dateAdded": "2020-07-02",
+    "dateRead": "2022-07-14",
+    "dateAdded": "2022-07-14",
     "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/isbn/9780316055437-L.jpg?default=false"
+    "remoteCover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1378710146l/17333223.jpg"
   },
   {
     "id": "6867",
@@ -1099,12 +1284,12 @@
     "publisher": "Anchor Books",
     "binding": "Paperback",
     "pageCount": 351,
-    "yearPublished": 2003,
+    "yearPublished": 2001,
     "originalYear": 2001,
-    "dateRead": "2022-07-06",
-    "dateAdded": "2022-01-12",
+    "dateRead": "2022-07-07",
+    "dateAdded": "2022-07-07",
     "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/id/8381043-L.jpg"
+    "remoteCover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1773518365l/6867._SY475_.jpg"
   },
   {
     "id": "24800",
@@ -1118,10 +1303,10 @@
     "pageCount": 709,
     "yearPublished": 2000,
     "originalYear": 2000,
-    "dateRead": "2022-05-10",
-    "dateAdded": "2022-01-12",
+    "dateRead": "2022-05-11",
+    "dateAdded": "2022-05-12",
     "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/id/6450442-L.jpg"
+    "remoteCover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1403889034l/24800.jpg"
   },
   {
     "id": "32076670",
@@ -1136,12 +1321,12 @@
     "publisher": "Tor Books",
     "binding": "Hardcover",
     "pageCount": 384,
-    "yearPublished": 2018,
+    "yearPublished": 2004,
     "originalYear": 2004,
-    "dateRead": "2022-04-08",
-    "dateAdded": "2021-11-28",
+    "dateRead": "2022-04-09",
+    "dateAdded": "2022-04-09",
     "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/isbn/9780765394071-L.jpg?default=false"
+    "remoteCover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1527049517l/32076670.jpg"
   },
   {
     "id": "4799",
@@ -1155,12 +1340,12 @@
     "publisher": "Penguin Books",
     "binding": "Paperback",
     "pageCount": 181,
-    "yearPublished": 2002,
+    "yearPublished": 1943,
     "originalYear": 1943,
-    "dateRead": "2022-04-04",
-    "dateAdded": "2022-01-12",
+    "dateRead": "2022-04-05",
+    "dateAdded": "2022-04-05",
     "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/isbn/9780142000687-L.jpg?default=false"
+    "remoteCover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1388188936l/4799.jpg"
   },
   {
     "id": "6751",
@@ -1176,10 +1361,10 @@
     "pageCount": 343,
     "yearPublished": 2005,
     "originalYear": 2005,
-    "dateRead": "2022-04-03",
-    "dateAdded": "2020-12-03",
+    "dateRead": "2022-04-04",
+    "dateAdded": "2022-04-04",
     "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/isbn/9780316156110-L.jpg?default=false"
+    "remoteCover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1388854217l/6751.jpg"
   },
   {
     "id": "28251250",
@@ -1193,12 +1378,12 @@
     "publisher": "Penguin Classics",
     "binding": "Paperback",
     "pageCount": 320,
-    "yearPublished": 2016,
+    "yearPublished": 1985,
     "originalYear": 1985,
     "dateRead": "2022-03-26",
-    "dateAdded": "2022-03-08",
+    "dateAdded": "2022-03-26",
     "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/isbn/9780143129554-L.jpg?default=false"
+    "remoteCover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1476807953l/28251250._SY475_.jpg"
   },
   {
     "id": "12287209",
@@ -1213,9 +1398,9 @@
     "yearPublished": 2011,
     "originalYear": 2011,
     "dateRead": "2022-02-26",
-    "dateAdded": "2020-06-05",
+    "dateAdded": "2025-09-17",
     "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/id/14369537-L.jpg"
+    "remoteCover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1327889474l/12287209.jpg"
   },
   {
     "id": "38501",
@@ -1229,12 +1414,12 @@
     "publisher": "Ecco",
     "binding": "Paperback",
     "pageCount": 288,
-    "yearPublished": 2007,
+    "yearPublished": 1982,
     "originalYear": 1982,
     "dateRead": "2022-02-25",
-    "dateAdded": "2022-02-17",
+    "dateAdded": "2022-02-25",
     "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/isbn/9780061177583-L.jpg?default=false"
+    "remoteCover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1388195001l/38501.jpg"
   },
   {
     "id": "3867",
@@ -1248,12 +1433,12 @@
     "publisher": "W. W. Norton & Company",
     "binding": "Paperback",
     "pageCount": 255,
-    "yearPublished": 2006,
+    "yearPublished": 2005,
     "originalYear": 2005,
     "dateRead": "2022-02-22",
-    "dateAdded": "2022-01-12",
+    "dateAdded": "2022-02-22",
     "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/isbn/9780393328622-L.jpg?default=false"
+    "remoteCover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1327911009l/3867.jpg"
   },
   {
     "id": "49455",
@@ -1268,12 +1453,12 @@
     "publisher": "Vintage Classics",
     "binding": "Paperback",
     "pageCount": 136,
-    "yearPublished": 1994,
+    "yearPublished": 1864,
     "originalYear": 1864,
     "dateRead": "2022-02-16",
-    "dateAdded": "2021-12-10",
+    "dateAdded": "2022-02-16",
     "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/isbn/9780679734529-L.jpg?default=false"
+    "remoteCover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1657562670l/49455._SY475_.jpg"
   },
   {
     "id": "6334",
@@ -1287,12 +1472,12 @@
     "publisher": "Vintage Books",
     "binding": "Paperback",
     "pageCount": 288,
-    "yearPublished": 2010,
+    "yearPublished": 2005,
     "originalYear": 2005,
     "dateRead": "2022-02-13",
-    "dateAdded": "2022-02-01",
+    "dateAdded": "2022-02-14",
     "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/isbn/9781400078776-L.jpg?default=false"
+    "remoteCover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1353048590l/6334.jpg"
   },
   {
     "id": "29044",
@@ -1306,12 +1491,12 @@
     "publisher": "Vintage Books",
     "binding": "Paperback",
     "pageCount": 559,
-    "yearPublished": 2004,
+    "yearPublished": 1992,
     "originalYear": 1992,
     "dateRead": "2022-02-11",
-    "dateAdded": "2022-01-06",
+    "dateAdded": "2022-02-11",
     "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/isbn/9781400031702-L.jpg?default=false"
+    "remoteCover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1751820530l/29044._SY475_.jpg"
   },
   {
     "id": "28921",
@@ -1323,12 +1508,12 @@
     "publisher": "Faber & Faber",
     "binding": "Paperback",
     "pageCount": 258,
-    "yearPublished": 2005,
+    "yearPublished": 1989,
     "originalYear": 1989,
     "dateRead": "2022-02-04",
-    "dateAdded": "2022-01-06",
+    "dateAdded": "2022-02-04",
     "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/id/95742-L.jpg"
+    "remoteCover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1327128714l/28921.jpg"
   },
   {
     "id": "168668",
@@ -1342,12 +1527,12 @@
     "publisher": "Simon & Schuster",
     "binding": "Paperback",
     "pageCount": 453,
-    "yearPublished": 2004,
+    "yearPublished": 1961,
     "originalYear": 1961,
     "dateRead": "2022-01-29",
-    "dateAdded": "2022-01-18",
+    "dateAdded": "2022-01-29",
     "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/isbn/9780684833392-L.jpg?default=false"
+    "remoteCover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1463157317l/168668.jpg"
   },
   {
     "id": "2113260",
@@ -1364,9 +1549,9 @@
     "yearPublished": 2009,
     "originalYear": 2009,
     "dateRead": "2022-01-18",
-    "dateAdded": "2021-09-09",
+    "dateAdded": "2022-01-18",
     "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/isbn/9780670019632-L.jpg?default=false"
+    "remoteCover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1327563734l/2113260.jpg"
   },
   {
     "id": "243705",
@@ -1378,12 +1563,12 @@
     "publisher": "Vintage",
     "binding": "Paperback",
     "pageCount": 283,
-    "yearPublished": 1998,
+    "yearPublished": 1963,
     "originalYear": 1963,
     "dateRead": "2022-01-12",
-    "dateAdded": "2021-12-29",
+    "dateAdded": "2022-01-12",
     "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/id/3329936-L.jpg"
+    "remoteCover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1394828024l/243705.jpg"
   },
   {
     "id": "890",
@@ -1397,12 +1582,12 @@
     "publisher": "Penguin Books",
     "binding": "Paperback",
     "pageCount": 107,
-    "yearPublished": 2002,
+    "yearPublished": 1937,
     "originalYear": 1937,
     "dateRead": "2022-01-09",
     "dateAdded": "2022-01-09",
     "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/isbn/9780142000670-L.jpg?default=false"
+    "remoteCover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1511302904l/890._SX318_.jpg"
   },
   {
     "id": "18114322",
@@ -1416,12 +1601,12 @@
     "publisher": "Viking",
     "binding": "Hardcover",
     "pageCount": 536,
-    "yearPublished": 2014,
+    "yearPublished": 1939,
     "originalYear": 1939,
     "dateRead": "2022-01-09",
-    "dateAdded": "2022-01-04",
+    "dateAdded": "2022-01-09",
     "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/isbn/9780670016907-L.jpg?default=false"
+    "remoteCover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1375670575l/18114322.jpg"
   },
   {
     "id": "77566",
@@ -1435,13 +1620,13 @@
     "publisher": "Bantam Doubleday Dell Publishing Group",
     "binding": "Mass Market Paperback",
     "pageCount": 500,
-    "yearPublished": 1990,
+    "yearPublished": 1989,
     "originalYear": 1989,
     "dateRead": "2022-01-04",
-    "dateAdded": "2021-11-28",
+    "dateAdded": "2022-01-04",
     "review": "3.7",
     "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/isbn/9780553283686-L.jpg?default=false"
+    "remoteCover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1746983261l/77566._SY475_.jpg"
   },
   {
     "id": "58314",
@@ -1456,13 +1641,13 @@
     "publisher": "Vintage",
     "binding": "Paperback",
     "pageCount": 272,
-    "yearPublished": 2001,
+    "yearPublished": 1998,
     "originalYear": 1998,
     "dateRead": "2021-12-21",
-    "dateAdded": "2021-10-19",
+    "dateAdded": "2021-12-21",
     "review": "3.5",
     "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/isbn/9780375727016-L.jpg?default=false"
+    "remoteCover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1604164454l/58314._SY475_.jpg"
   },
   {
     "id": "13456414",
@@ -1476,13 +1661,13 @@
     "publisher": "Strange Violin Editions",
     "binding": "Paperback",
     "pageCount": 108,
-    "yearPublished": 2012,
+    "yearPublished": 2011,
     "originalYear": 2011,
     "dateRead": "2021-12-12",
-    "dateAdded": "2020-06-26",
-    "review": "4.6<br/>Changed to a 5 because I can't stop thinking about it",
+    "dateAdded": "2021-12-21",
+    "review": "4.6 Changed to a 5 because I can't stop thinking about it",
     "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/isbn/9780983748427-L.jpg?default=false"
+    "remoteCover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1751978801l/13456414._SY475_.jpg"
   },
   {
     "id": "44767458",
@@ -1496,13 +1681,13 @@
     "publisher": "Ace",
     "binding": "Hardcover",
     "pageCount": 658,
-    "yearPublished": 2019,
+    "yearPublished": 1965,
     "originalYear": 1965,
     "dateRead": "2021-12-10",
-    "dateAdded": "2021-12-10",
+    "dateAdded": "2021-12-12",
     "review": "4.5",
     "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/isbn/9780593099322-L.jpg?default=false"
+    "remoteCover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1555447414l/44767458.jpg"
   },
   {
     "id": "18619684",
@@ -1516,13 +1701,13 @@
     "publisher": "Zola Books",
     "binding": "ebook",
     "pageCount": 537,
-    "yearPublished": 2013,
+    "yearPublished": 2003,
     "originalYear": 2003,
     "dateRead": "2021-12-02",
-    "dateAdded": "2021-12-02",
-    "review": "1.5<br/><br/>Amazing concept. Terribly executed. Such a waste.<br/><br/>Mountains of filler. Cringey ethnic stereotypes. One dimensional pretentious upper middle class characters who completely miss the mark of being \"cool\". Pseud references to Greek literature and Marxism. Creepy groomer Henry. Poor boring Clare.",
+    "dateAdded": "2021-12-03",
+    "review": "1.5 Amazing concept. Terribly executed. Such a waste. Mountains of filler. Cringey ethnic stereotypes. One dimensional pretentious upper middle class characters who completely miss the mark of being \"cool\". Pseud references to Greek literature and Marxism. Creepy groomer Henry. Poor boring Clare.",
     "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/id/9273734-L.jpg"
+    "remoteCover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1733519901l/18619684.jpg"
   },
   {
     "id": "1617",
@@ -1537,12 +1722,12 @@
     "publisher": "Hill & Wang",
     "binding": "Paperback",
     "pageCount": 120,
-    "yearPublished": 2006,
+    "yearPublished": 1956,
     "originalYear": 1956,
     "dateRead": "2021-11-25",
-    "dateAdded": "2021-11-24",
+    "dateAdded": "2021-11-25",
     "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/isbn/9780374500016-L.jpg?default=false"
+    "remoteCover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1709507006l/1617._SY475_.jpg"
   },
   {
     "id": "394535",
@@ -1554,12 +1739,12 @@
     "publisher": "Vintage Books",
     "binding": "Paperback",
     "pageCount": 351,
-    "yearPublished": 2010,
+    "yearPublished": 1985,
     "originalYear": 1985,
     "dateRead": "2021-11-21",
-    "dateAdded": "2021-11-20",
+    "dateAdded": "2021-11-21",
     "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/id/419991-L.jpg"
+    "remoteCover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1701688704l/394535._SY475_.jpg"
   },
   {
     "id": "25188109",
@@ -1579,7 +1764,7 @@
     "dateAdded": "2021-11-21",
     "review": "4.5",
     "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/isbn/9781938570094-L.jpg?default=false"
+    "remoteCover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1426951197l/25188109.jpg"
   },
   {
     "id": "18966806",
@@ -1599,7 +1784,7 @@
     "dateAdded": "2021-11-11",
     "review": "3.3",
     "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/isbn/9780345539847-L.jpg?default=false"
+    "remoteCover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1461354277l/18966806.jpg"
   },
   {
     "id": "18966819",
@@ -1615,11 +1800,11 @@
     "pageCount": 466,
     "yearPublished": 2015,
     "originalYear": 2015,
-    "dateRead": "2021-10-30",
-    "dateAdded": "2021-10-30",
+    "dateRead": "2021-10-31",
+    "dateAdded": "2021-10-31",
     "review": "4",
     "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/id/8454351-L.jpg"
+    "remoteCover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1394684475l/18966819.jpg"
   },
   {
     "id": "331256",
@@ -1634,13 +1819,13 @@
     "publisher": "Gollancz",
     "binding": "Paperback",
     "pageCount": 145,
-    "yearPublished": 2000,
+    "yearPublished": 1972,
     "originalYear": 1972,
-    "dateRead": "2021-09-21",
-    "dateAdded": "2021-09-21",
+    "dateRead": "2021-09-22",
+    "dateAdded": "2021-09-22",
     "review": "4.0",
     "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/isbn/9780575070530-L.jpg?default=false"
+    "remoteCover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1173812259l/331256.jpg"
   },
   {
     "id": "15839976",
@@ -1673,13 +1858,13 @@
     "publisher": "Penguin",
     "binding": "Paperback",
     "pageCount": 368,
-    "yearPublished": 1995,
+    "yearPublished": 1955,
     "originalYear": 1955,
-    "dateRead": "2021-08-21",
-    "dateAdded": "2021-08-21",
+    "dateRead": "2021-08-22",
+    "dateAdded": "2021-09-13",
     "review": "4.2",
     "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/id/12984540-L.jpg"
+    "remoteCover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1377756377l/7604.jpg"
   },
   {
     "id": "40495148",
@@ -1692,13 +1877,13 @@
     "publisher": "Mariner Books",
     "binding": "Kindle Edition",
     "pageCount": 349,
-    "yearPublished": 2013,
+    "yearPublished": 1995,
     "originalYear": 1995,
-    "dateRead": "2021-08-07",
-    "dateAdded": "2021-08-07",
+    "dateRead": "2021-08-08",
+    "dateAdded": "2021-09-13",
     "review": "2",
     "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/id/115428-L.jpg"
+    "remoteCover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1528481068l/40495148._SY475_.jpg"
   },
   {
     "id": "4406",
@@ -1732,68 +1917,32 @@
     "publisher": "Little, Brown Paperbacks",
     "binding": "Paperback",
     "pageCount": 656,
-    "yearPublished": 2001,
+    "yearPublished": 1965,
     "originalYear": 1965,
     "dateRead": "2021-01-01",
-    "dateAdded": "2021-01-01",
+    "dateAdded": "2022-07-21",
     "shelves": "best",
     "review": "4.7",
     "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/isbn/9780316296199-L.jpg?default=false"
+    "remoteCover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1441323311l/16286._SY475_.jpg"
   },
   {
-    "id": "38447",
-    "goodreadsId": "38447",
-    "title": "The Handmaid’s Tale (The Handmaid's Tale, #1)",
-    "shortTitle": "The Handmaid’s Tale",
-    "author": "Margaret Atwood",
-    "isbn": "038549081X",
-    "isbn13": "9780385490818",
-    "rating": 3,
-    "publisher": "Anchor Books",
-    "binding": "Paperback",
-    "pageCount": 311,
-    "yearPublished": 1998,
-    "originalYear": 1985,
-    "dateRead": "2019-04-19",
-    "dateAdded": "2019-04-03",
-    "review": "3.3",
-    "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/isbn/9780385490818-L.jpg?default=false"
-  },
-  {
-    "id": "30257963",
-    "goodreadsId": "30257963",
-    "title": "12 Rules for Life: An Antidote to Chaos",
-    "shortTitle": "12 Rules for Life",
-    "author": "Jordan B. Peterson",
-    "isbn": "0345816021",
-    "isbn13": "9780345816023",
-    "rating": 3,
-    "publisher": "Random House Canada",
-    "binding": "Hardcover",
-    "pageCount": 409,
-    "yearPublished": 2018,
-    "originalYear": 2018,
-    "dateAdded": "2018-11-07",
-    "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/isbn/9780345816023-L.jpg?default=false"
-  },
-  {
-    "id": "40961427",
-    "goodreadsId": "40961427",
-    "title": "1984",
-    "shortTitle": "1984",
+    "id": "30553",
+    "goodreadsId": "30553",
+    "title": "The Road to Wigan Pier",
+    "shortTitle": "The Road to Wigan Pier",
     "author": "George Orwell",
-    "rating": 5,
-    "publisher": "Houghton Mifflin Harcourt",
-    "binding": "ebook",
-    "pageCount": 298,
-    "yearPublished": 2013,
-    "originalYear": 1948,
-    "dateAdded": "2019-04-22",
+    "additionalAuthors": "Richard Hoggart",
+    "rating": 3,
+    "publisher": "Penguin Classics",
+    "binding": "Paperback",
+    "pageCount": 215,
+    "yearPublished": 2001,
+    "originalYear": 1937,
+    "dateAdded": "2020-12-26",
+    "review": "3. The first half is really good.",
     "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/id/14351142-L.jpg"
+    "remoteCover": "https://covers.openlibrary.org/b/id/116484-L.jpg"
   },
   {
     "id": "22067499",
@@ -1816,20 +1965,55 @@
     "remoteCover": "https://covers.openlibrary.org/b/id/13854246-L.jpg"
   },
   {
-    "id": "30165203",
-    "goodreadsId": "30165203",
-    "title": "American Gods: Tenth Anniversary (American Gods, #1)",
-    "shortTitle": "American Gods",
-    "author": "Neil Gaiman",
-    "rating": 4,
-    "publisher": "William Morrow",
-    "binding": "Kindle Edition",
-    "pageCount": 635,
-    "yearPublished": 2011,
-    "originalYear": 2001,
-    "dateAdded": "2018-11-07",
+    "id": "23692271",
+    "goodreadsId": "23692271",
+    "title": "Sapiens: A Brief History of Humankind",
+    "shortTitle": "Sapiens",
+    "author": "Yuval Noah Harari",
+    "rating": 2,
+    "publisher": "Vintage",
+    "binding": "Paperback",
+    "pageCount": 512,
+    "yearPublished": 2015,
+    "originalYear": 2011,
+    "dateAdded": "2020-03-13",
+    "review": "dnf",
     "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/id/8494659-L.jpg"
+    "remoteCover": "https://covers.openlibrary.org/b/id/8634250-L.jpg"
+  },
+  {
+    "id": "13651",
+    "goodreadsId": "13651",
+    "title": "The Dispossessed: An Ambiguous Utopia",
+    "shortTitle": "The Dispossessed",
+    "author": "Ursula K. Le Guin",
+    "rating": 4,
+    "publisher": "Harper Voyager",
+    "binding": "Paperback",
+    "pageCount": 387,
+    "yearPublished": 1994,
+    "originalYear": 1974,
+    "dateAdded": "2019-11-06",
+    "review": "3.7 I feel there's a lot that I can get out of this book with a few more reads.",
+    "readCount": 1,
+    "remoteCover": "https://covers.openlibrary.org/b/id/6979680-L.jpg"
+  },
+  {
+    "id": "35510008",
+    "goodreadsId": "35510008",
+    "title": "This is Going to Hurt: Secret Diaries of a Junior Doctor",
+    "shortTitle": "This is Going to Hurt",
+    "author": "Adam Kay",
+    "rating": 5,
+    "publisher": "Picador",
+    "binding": "ebook",
+    "pageCount": 285,
+    "yearPublished": 2017,
+    "originalYear": 2017,
+    "dateAdded": "2019-11-06",
+    "review": "4.7",
+    "readCount": 1,
+    "remoteCover": "https://covers.openlibrary.org/b/id/9355118-L.jpg"
   },
   {
     "id": "170448",
@@ -1851,22 +2035,24 @@
     "remoteCover": "https://covers.openlibrary.org/b/isbn/9780451526342-L.jpg?default=false"
   },
   {
-    "id": "5129",
-    "goodreadsId": "5129",
-    "title": "Brave New World",
-    "shortTitle": "Brave New World",
-    "author": "Aldous Huxley",
-    "isbn": "0060929871",
-    "isbn13": "9780060929879",
-    "rating": 3,
-    "publisher": "HarperPerennial / Perennial Classics",
-    "binding": "Paperback",
-    "pageCount": 288,
-    "yearPublished": 1998,
-    "originalYear": 1932,
-    "dateAdded": "2019-03-02",
+    "id": "45252",
+    "goodreadsId": "45252",
+    "title": "Pandora's Star (Commonwealth Saga, #1)",
+    "shortTitle": "Pandora's Star",
+    "author": "Peter F. Hamilton",
+    "additionalAuthors": "Marta García Martínez",
+    "isbn": "0345461622",
+    "isbn13": "9780345461629",
+    "rating": 4,
+    "publisher": "Del Rey",
+    "binding": "Hardcover",
+    "pageCount": 768,
+    "yearPublished": 2005,
+    "originalYear": 2004,
+    "dateAdded": "2019-08-20",
+    "review": "4.3",
     "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/isbn/9780060929879-L.jpg?default=false"
+    "remoteCover": "https://covers.openlibrary.org/b/isbn/9780345461629-L.jpg?default=false"
   },
   {
     "id": "40376072",
@@ -1887,62 +2073,6 @@
     "remoteCover": "https://covers.openlibrary.org/b/id/8750923-L.jpg"
   },
   {
-    "id": "25499718",
-    "goodreadsId": "25499718",
-    "title": "Children of Time (Children of Time, #1)",
-    "shortTitle": "Children of Time",
-    "author": "Adrian Tchaikovsky",
-    "isbn": "1447273281",
-    "isbn13": "9781447273288",
-    "rating": 5,
-    "publisher": "PanMacmillan",
-    "binding": "Hardcover",
-    "pageCount": 600,
-    "yearPublished": 2015,
-    "originalYear": 2015,
-    "dateAdded": "2018-11-07",
-    "shelves": "best",
-    "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/isbn/9781447273288-L.jpg?default=false"
-  },
-  {
-    "id": "49628",
-    "goodreadsId": "49628",
-    "title": "Cloud Atlas",
-    "shortTitle": "Cloud Atlas",
-    "author": "David  Mitchell",
-    "isbn": "0375507256",
-    "isbn13": "9780375507250",
-    "rating": 4,
-    "publisher": "Random House",
-    "binding": "Paperback",
-    "pageCount": 509,
-    "yearPublished": 2004,
-    "originalYear": 2004,
-    "dateAdded": "2024-10-05",
-    "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/isbn/9780375507250-L.jpg?default=false"
-  },
-  {
-    "id": "25451264",
-    "goodreadsId": "25451264",
-    "title": "Death's End (Remembrance of Earth’s Past, #3)",
-    "shortTitle": "Death's End",
-    "author": "Liu Cixin",
-    "additionalAuthors": "Ken Liu",
-    "isbn": "0765377101",
-    "isbn13": "9780765377104",
-    "rating": 5,
-    "publisher": "TOR",
-    "binding": "Hardcover",
-    "pageCount": 604,
-    "yearPublished": 2016,
-    "originalYear": 2010,
-    "dateAdded": "2018-11-07",
-    "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/isbn/9780765377104-L.jpg?default=false"
-  },
-  {
     "id": "41160292",
     "goodreadsId": "41160292",
     "title": "Exhalation",
@@ -1958,99 +2088,6 @@
     "review": "4.1",
     "readCount": 1,
     "remoteCover": "https://covers.openlibrary.org/b/id/8793546-L.jpg"
-  },
-  {
-    "id": "13079982",
-    "goodreadsId": "13079982",
-    "title": "Fahrenheit 451",
-    "shortTitle": "Fahrenheit 451",
-    "author": "Ray Bradbury",
-    "rating": 3,
-    "publisher": "Simon & Schuster",
-    "binding": "Mass Market Paperback",
-    "pageCount": 249,
-    "yearPublished": 2011,
-    "originalYear": 1953,
-    "dateAdded": "2019-03-05",
-    "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/id/12993656-L.jpg"
-  },
-  {
-    "id": "9647532",
-    "goodreadsId": "9647532",
-    "title": "Fuzzy Nation (Fuzzy Sapiens, #7)",
-    "shortTitle": "Fuzzy Nation",
-    "author": "John Scalzi",
-    "isbn": "0765328542",
-    "isbn13": "9780765328540",
-    "rating": 5,
-    "publisher": "Tor Books",
-    "binding": "Hardcover",
-    "pageCount": 303,
-    "yearPublished": 2011,
-    "originalYear": 2011,
-    "dateAdded": "2019-08-07",
-    "review": "4.5",
-    "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/isbn/9780765328540-L.jpg?default=false"
-  },
-  {
-    "id": "1126719",
-    "goodreadsId": "1126719",
-    "title": "House of Suns",
-    "shortTitle": "House of Suns",
-    "author": "Alastair Reynolds",
-    "isbn": "0575099127",
-    "isbn13": "9780575099128",
-    "rating": 5,
-    "publisher": "Gollancz",
-    "binding": "Paperback",
-    "pageCount": 512,
-    "yearPublished": 2010,
-    "originalYear": 2008,
-    "dateAdded": "2019-08-19",
-    "shelves": "best",
-    "review": "4.7",
-    "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/isbn/9780575099128-L.jpg?default=false"
-  },
-  {
-    "id": "41057294",
-    "goodreadsId": "41057294",
-    "title": "Normal People",
-    "shortTitle": "Normal People",
-    "author": "Sally Rooney",
-    "isbn": "1984822179",
-    "isbn13": "9781984822178",
-    "rating": 4,
-    "publisher": "Crown",
-    "binding": "Hardcover",
-    "pageCount": 273,
-    "yearPublished": 2019,
-    "originalYear": 2018,
-    "dateAdded": "2019-07-06",
-    "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/isbn/9781984822178-L.jpg?default=false"
-  },
-  {
-    "id": "45252",
-    "goodreadsId": "45252",
-    "title": "Pandora's Star (Commonwealth Saga, #1)",
-    "shortTitle": "Pandora's Star",
-    "author": "Peter F. Hamilton",
-    "additionalAuthors": "Marta García Martínez",
-    "isbn": "0345461622",
-    "isbn13": "9780345461629",
-    "rating": 4,
-    "publisher": "Del Rey",
-    "binding": "Hardcover",
-    "pageCount": 768,
-    "yearPublished": 2005,
-    "originalYear": 2004,
-    "dateAdded": "2019-08-20",
-    "review": "4.3",
-    "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/isbn/9780345461629-L.jpg?default=false"
   },
   {
     "id": "36317638",
@@ -2091,40 +2128,6 @@
     "remoteCover": "https://covers.openlibrary.org/b/isbn/9781524759780-L.jpg?default=false"
   },
   {
-    "id": "23692271",
-    "goodreadsId": "23692271",
-    "title": "Sapiens: A Brief History of Humankind",
-    "shortTitle": "Sapiens",
-    "author": "Yuval Noah Harari",
-    "rating": 2,
-    "publisher": "Vintage",
-    "binding": "Paperback",
-    "pageCount": 512,
-    "yearPublished": 2015,
-    "originalYear": 2011,
-    "dateAdded": "2020-03-13",
-    "review": "dnf",
-    "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/id/8634250-L.jpg"
-  },
-  {
-    "id": "4981",
-    "goodreadsId": "4981",
-    "title": "Slaughterhouse-Five",
-    "shortTitle": "Slaughterhouse-Five",
-    "author": "Kurt Vonnegut Jr.",
-    "rating": 3,
-    "publisher": "Dial Press",
-    "binding": "Paperback",
-    "pageCount": 275,
-    "yearPublished": 1999,
-    "originalYear": 1969,
-    "dateAdded": "2019-04-03",
-    "review": "3.5",
-    "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/id/12727001-L.jpg"
-  },
-  {
     "id": "910863",
     "goodreadsId": "910863",
     "title": "Spin (Spin, #1)",
@@ -2144,59 +2147,57 @@
     "remoteCover": "https://covers.openlibrary.org/b/isbn/9780765348258-L.jpg?default=false"
   },
   {
-    "id": "166997",
-    "goodreadsId": "166997",
-    "title": "Stoner",
-    "shortTitle": "Stoner",
-    "author": "John  Williams",
-    "additionalAuthors": "John McGahern",
-    "isbn": "1590171993",
-    "isbn13": "9781590171998",
-    "rating": 5,
-    "publisher": "New York Review Books",
-    "binding": "Paperback",
-    "pageCount": 292,
-    "yearPublished": 2006,
-    "originalYear": 1965,
-    "dateAdded": "2020-03-11",
-    "shelves": "best",
-    "review": "5",
-    "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/isbn/9781590171998-L.jpg?default=false"
-  },
-  {
-    "id": "23168817",
-    "goodreadsId": "23168817",
-    "title": "The Dark Forest (Remembrance of Earth’s Past, #2)",
-    "shortTitle": "The Dark Forest",
-    "author": "Liu Cixin",
-    "additionalAuthors": "Joel Martinsen",
+    "id": "9647532",
+    "goodreadsId": "9647532",
+    "title": "Fuzzy Nation (Fuzzy Sapiens, #7)",
+    "shortTitle": "Fuzzy Nation",
+    "author": "John Scalzi",
+    "isbn": "0765328542",
+    "isbn13": "9780765328540",
     "rating": 5,
     "publisher": "Tor Books",
     "binding": "Hardcover",
-    "pageCount": 512,
-    "yearPublished": 2015,
-    "originalYear": 2008,
-    "dateAdded": "2018-11-07",
+    "pageCount": 303,
+    "yearPublished": 2011,
+    "originalYear": 2011,
+    "dateAdded": "2019-08-07",
+    "review": "4.5",
     "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/id/10526598-L.jpg"
+    "remoteCover": "https://covers.openlibrary.org/b/isbn/9780765328540-L.jpg?default=false"
   },
   {
-    "id": "13651",
-    "goodreadsId": "13651",
-    "title": "The Dispossessed: An Ambiguous Utopia",
-    "shortTitle": "The Dispossessed",
-    "author": "Ursula K. Le Guin",
-    "rating": 4,
-    "publisher": "Harper Voyager",
+    "id": "31817749",
+    "goodreadsId": "31817749",
+    "title": "The Stone Sky (The Broken Earth, #3)",
+    "shortTitle": "The Stone Sky",
+    "author": "N.K. Jemisin",
+    "rating": 5,
+    "publisher": "Orbit",
     "binding": "Paperback",
-    "pageCount": 387,
-    "yearPublished": 1994,
-    "originalYear": 1974,
-    "dateAdded": "2019-11-06",
-    "review": "3.7 I feel there's a lot that I can get out of this book with a few more reads.",
+    "pageCount": 416,
+    "yearPublished": 2017,
+    "originalYear": 2017,
+    "dateAdded": "2019-07-24",
+    "review": "5",
     "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/id/6979680-L.jpg"
+    "remoteCover": "https://covers.openlibrary.org/b/id/8191910-L.jpg"
+  },
+  {
+    "id": "26228034",
+    "goodreadsId": "26228034",
+    "title": "The Obelisk Gate (The Broken Earth, #2)",
+    "shortTitle": "The Obelisk Gate",
+    "author": "N.K. Jemisin",
+    "rating": 4,
+    "publisher": "Orbit",
+    "binding": "Paperback",
+    "pageCount": 410,
+    "yearPublished": 2016,
+    "originalYear": 2016,
+    "dateAdded": "2019-07-18",
+    "review": "3.9",
+    "readCount": 1,
+    "remoteCover": "https://covers.openlibrary.org/b/id/8138324-L.jpg"
   },
   {
     "id": "19161852",
@@ -2214,6 +2215,111 @@
     "review": "4.8",
     "readCount": 1,
     "remoteCover": "https://covers.openlibrary.org/b/id/8133598-L.jpg"
+  },
+  {
+    "id": "41057294",
+    "goodreadsId": "41057294",
+    "title": "Normal People",
+    "shortTitle": "Normal People",
+    "author": "Sally Rooney",
+    "isbn": "1984822179",
+    "isbn13": "9781984822178",
+    "rating": 4,
+    "publisher": "Crown",
+    "binding": "Hardcover",
+    "pageCount": 273,
+    "yearPublished": 2019,
+    "originalYear": 2018,
+    "dateAdded": "2019-07-06",
+    "readCount": 1,
+    "remoteCover": "https://covers.openlibrary.org/b/isbn/9781984822178-L.jpg?default=false"
+  },
+  {
+    "id": "40961427",
+    "goodreadsId": "40961427",
+    "title": "1984",
+    "shortTitle": "1984",
+    "author": "George Orwell",
+    "rating": 5,
+    "publisher": "Houghton Mifflin Harcourt",
+    "binding": "ebook",
+    "pageCount": 298,
+    "yearPublished": 2013,
+    "originalYear": 1948,
+    "dateAdded": "2019-04-22",
+    "readCount": 1,
+    "remoteCover": "https://covers.openlibrary.org/b/id/14351142-L.jpg"
+  },
+  {
+    "id": "38447",
+    "goodreadsId": "38447",
+    "title": "The Handmaid’s Tale (The Handmaid's Tale, #1)",
+    "shortTitle": "The Handmaid’s Tale",
+    "author": "Margaret Atwood",
+    "isbn": "038549081X",
+    "isbn13": "9780385490818",
+    "rating": 3,
+    "publisher": "Anchor Books",
+    "binding": "Paperback",
+    "pageCount": 311,
+    "yearPublished": 1998,
+    "originalYear": 1985,
+    "dateRead": "2019-04-19",
+    "dateAdded": "2019-04-03",
+    "review": "3.3",
+    "readCount": 1,
+    "remoteCover": "https://covers.openlibrary.org/b/isbn/9780385490818-L.jpg?default=false"
+  },
+  {
+    "id": "4981",
+    "goodreadsId": "4981",
+    "title": "Slaughterhouse-Five",
+    "shortTitle": "Slaughterhouse-Five",
+    "author": "Kurt Vonnegut Jr.",
+    "rating": 3,
+    "publisher": "Dial Press",
+    "binding": "Paperback",
+    "pageCount": 275,
+    "yearPublished": 1999,
+    "originalYear": 1969,
+    "dateAdded": "2019-04-03",
+    "review": "3.5",
+    "readCount": 1,
+    "remoteCover": "https://covers.openlibrary.org/b/id/12727001-L.jpg"
+  },
+  {
+    "id": "13079982",
+    "goodreadsId": "13079982",
+    "title": "Fahrenheit 451",
+    "shortTitle": "Fahrenheit 451",
+    "author": "Ray Bradbury",
+    "rating": 3,
+    "publisher": "Simon & Schuster",
+    "binding": "Mass Market Paperback",
+    "pageCount": 249,
+    "yearPublished": 2011,
+    "originalYear": 1953,
+    "dateAdded": "2019-03-05",
+    "readCount": 1,
+    "remoteCover": "https://covers.openlibrary.org/b/id/12993656-L.jpg"
+  },
+  {
+    "id": "5129",
+    "goodreadsId": "5129",
+    "title": "Brave New World",
+    "shortTitle": "Brave New World",
+    "author": "Aldous Huxley",
+    "isbn": "0060929871",
+    "isbn13": "9780060929879",
+    "rating": 3,
+    "publisher": "HarperPerennial / Perennial Classics",
+    "binding": "Paperback",
+    "pageCount": 288,
+    "yearPublished": 1998,
+    "originalYear": 1932,
+    "dateAdded": "2019-03-02",
+    "readCount": 1,
+    "remoteCover": "https://covers.openlibrary.org/b/isbn/9780060929879-L.jpg?default=false"
   },
   {
     "id": "2429135",
@@ -2235,90 +2341,73 @@
     "remoteCover": "https://covers.openlibrary.org/b/isbn/9780670069019-L.jpg?default=false"
   },
   {
-    "id": "26228034",
-    "goodreadsId": "26228034",
-    "title": "The Obelisk Gate (The Broken Earth, #2)",
-    "shortTitle": "The Obelisk Gate",
-    "author": "N.K. Jemisin",
-    "rating": 4,
-    "publisher": "Orbit",
-    "binding": "Paperback",
-    "pageCount": 410,
-    "yearPublished": 2016,
-    "originalYear": 2016,
-    "dateAdded": "2019-07-18",
-    "review": "3.9",
-    "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/id/8138324-L.jpg"
-  },
-  {
-    "id": "30553",
-    "goodreadsId": "30553",
-    "title": "The Road to Wigan Pier",
-    "shortTitle": "The Road to Wigan Pier",
-    "author": "George Orwell",
-    "additionalAuthors": "Richard Hoggart",
+    "id": "30257963",
+    "goodreadsId": "30257963",
+    "title": "12 Rules for Life: An Antidote to Chaos",
+    "shortTitle": "12 Rules for Life",
+    "author": "Jordan B. Peterson",
+    "isbn": "0345816021",
+    "isbn13": "9780345816023",
     "rating": 3,
-    "publisher": "Penguin Classics",
-    "binding": "Paperback",
-    "pageCount": 215,
-    "yearPublished": 2001,
-    "originalYear": 1937,
-    "dateAdded": "2020-12-26",
-    "review": "3. The first half is really good.",
+    "publisher": "Random House Canada",
+    "binding": "Hardcover",
+    "pageCount": 409,
+    "yearPublished": 2018,
+    "originalYear": 2018,
+    "dateAdded": "2018-11-07",
     "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/id/116484-L.jpg"
+    "remoteCover": "https://covers.openlibrary.org/b/isbn/9780345816023-L.jpg?default=false"
   },
   {
-    "id": "31817749",
-    "goodreadsId": "31817749",
-    "title": "The Stone Sky (The Broken Earth, #3)",
-    "shortTitle": "The Stone Sky",
-    "author": "N.K. Jemisin",
-    "rating": 5,
-    "publisher": "Orbit",
-    "binding": "Paperback",
-    "pageCount": 416,
-    "yearPublished": 2017,
-    "originalYear": 2017,
-    "dateAdded": "2019-07-24",
-    "review": "5",
+    "id": "30165203",
+    "goodreadsId": "30165203",
+    "title": "American Gods: Tenth Anniversary (American Gods, #1)",
+    "shortTitle": "American Gods",
+    "author": "Neil Gaiman",
+    "rating": 4,
+    "publisher": "William Morrow",
+    "binding": "Kindle Edition",
+    "pageCount": 635,
+    "yearPublished": 2011,
+    "originalYear": 2001,
+    "dateAdded": "2018-11-07",
     "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/id/8191910-L.jpg"
+    "remoteCover": "https://covers.openlibrary.org/b/id/8494659-L.jpg"
   },
   {
-    "id": "20518872",
-    "goodreadsId": "20518872",
-    "title": "The Three-Body Problem (Remembrance of Earth’s Past, #1)",
-    "shortTitle": "The Three-Body Problem",
+    "id": "25451264",
+    "goodreadsId": "25451264",
+    "title": "Death's End (Remembrance of Earth’s Past, #3)",
+    "shortTitle": "Death's End",
     "author": "Liu Cixin",
     "additionalAuthors": "Ken Liu",
+    "isbn": "0765377101",
+    "isbn13": "9780765377104",
+    "rating": 5,
+    "publisher": "TOR",
+    "binding": "Hardcover",
+    "pageCount": 604,
+    "yearPublished": 2016,
+    "originalYear": 2010,
+    "dateAdded": "2018-11-07",
+    "readCount": 1,
+    "remoteCover": "https://covers.openlibrary.org/b/isbn/9780765377104-L.jpg?default=false"
+  },
+  {
+    "id": "23168817",
+    "goodreadsId": "23168817",
+    "title": "The Dark Forest (Remembrance of Earth’s Past, #2)",
+    "shortTitle": "The Dark Forest",
+    "author": "Liu Cixin",
+    "additionalAuthors": "Joel Martinsen",
     "rating": 5,
     "publisher": "Tor Books",
     "binding": "Hardcover",
-    "pageCount": 472,
-    "yearPublished": 2014,
-    "originalYear": 2006,
+    "pageCount": 512,
+    "yearPublished": 2015,
+    "originalYear": 2008,
     "dateAdded": "2018-11-07",
-    "shelves": "best",
     "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/id/9157544-L.jpg"
-  },
-  {
-    "id": "35510008",
-    "goodreadsId": "35510008",
-    "title": "This is Going to Hurt: Secret Diaries of a Junior Doctor",
-    "shortTitle": "This is Going to Hurt",
-    "author": "Adam Kay",
-    "rating": 5,
-    "publisher": "Picador",
-    "binding": "ebook",
-    "pageCount": 285,
-    "yearPublished": 2017,
-    "originalYear": 2017,
-    "dateAdded": "2019-11-06",
-    "review": "4.7",
-    "readCount": 1,
-    "remoteCover": "https://covers.openlibrary.org/b/id/9355118-L.jpg"
+    "remoteCover": "https://covers.openlibrary.org/b/id/10526598-L.jpg"
   }
 ]
