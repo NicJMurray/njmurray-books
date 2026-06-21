@@ -254,24 +254,6 @@ h1 {
   object-fit: cover;
 }
 
-.want-picker__title {
-  display: -webkit-box;
-  width: 24ch;
-  min-height: 2.85em;
-  overflow: hidden;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
-  text-align: center;
-  font-family: Georgia, "Iowan Old Style", "Times New Roman", serif;
-  font-size: 1.08rem;
-  line-height: 1.25;
-}
-
-.want-picker__title:hover {
-  text-decoration: underline;
-  text-underline-offset: 4px;
-}
-
 .toolbar {
   position: sticky;
   top: 64px;
@@ -640,7 +622,52 @@ h1 {
   }
 
   .intro {
-    padding-top: 16px;
+    position: relative;
+    display: block;
+    padding: 48px 0 42px;
+  }
+
+  .intro__copy {
+    min-width: 0;
+    padding-right: 76px;
+  }
+
+  h1 {
+    max-width: none;
+    font-size: clamp(2.35rem, 11.6vw, 3rem);
+    line-height: 1;
+    white-space: nowrap;
+  }
+
+  .want-picker {
+    position: absolute;
+    top: 48px;
+    right: 0;
+    width: 64px;
+    gap: 5px;
+    padding: 0;
+  }
+
+  .want-picker__label {
+    order: 2;
+    color: var(--muted);
+    font-size: 0.66rem;
+    font-weight: 650;
+    letter-spacing: 0;
+    line-height: 1.1;
+    text-align: center;
+  }
+
+  .want-picker__cover {
+    width: 54px;
+    border-radius: 4px;
+    box-shadow: 0 8px 18px rgba(21, 21, 21, 0.12);
+  }
+
+  .want-picker__cover:hover,
+  .want-picker__cover.is-spinning {
+    transform: translateY(-1px);
+    box-shadow: 0 10px 22px rgba(21, 21, 21, 0.16);
   }
 
   .hero-shelf {

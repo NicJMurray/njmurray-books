@@ -272,14 +272,6 @@ function WantToReadPicker({ books: pickerBooks }) {
       >
         <img src={cover} alt={`Cover of ${selectedBook.title}`} loading="eager" />
       </button>
-      <a
-        className="want-picker__title"
-        href={getGoodreadsUrl(selectedBook)}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        {selectedBook.shortTitle || selectedBook.title}
-      </a>
     </aside>
   );
 }
