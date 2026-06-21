@@ -38,14 +38,14 @@ jobs:
 
       - name: Commit data changes
         run: |
-          if git diff --quiet -- src/data/books.json; then
+          if git diff --quiet -- src/data/books.json src/data/wantToRead.json; then
             echo "No Goodreads data changes to commit."
             exit 0
           fi
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add src/data/books.json
+          git add src/data/books.json src/data/wantToRead.json
           git commit -m "Refresh Goodreads data"
           git push
 
