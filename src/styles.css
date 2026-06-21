@@ -113,14 +113,15 @@ a {
 
 .intro {
   display: grid;
-  grid-template-columns: minmax(0, 0.9fr) minmax(300px, 1fr);
-  gap: clamp(28px, 7vw, 88px);
-  align-items: center;
-  padding: 32px 0 46px;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 0.55fr);
+  gap: clamp(30px, 8vw, 96px);
+  align-items: end;
+  padding: 42px 0 48px;
 }
 
 .intro__copy {
   max-width: 760px;
+  align-self: end;
 }
 
 .eyebrow {
@@ -148,8 +149,8 @@ h1,
 
 h1 {
   max-width: 12ch;
-  margin-bottom: 18px;
-  font-size: clamp(3.1rem, 9vw, 6.4rem);
+  margin-bottom: 0;
+  font-size: clamp(3.7rem, 8.5vw, 6.8rem);
   line-height: 0.95;
 }
 
@@ -212,14 +213,23 @@ h1 {
 .want-picker {
   display: grid;
   justify-items: center;
-  width: min(100%, 280px);
+  width: min(100%, 236px);
   justify-self: end;
-  gap: 16px;
+  gap: 12px;
+  padding-bottom: 5px;
+}
+
+.want-picker__label {
+  margin: 0;
+  color: var(--accent);
+  font-size: 0.78rem;
+  font-weight: 760;
+  letter-spacing: 0.06em;
 }
 
 .want-picker__cover {
   display: block;
-  width: min(100%, 178px);
+  width: min(100%, 164px);
   padding: 0;
   overflow: hidden;
   border: 1px solid rgba(21, 21, 21, 0.14);
@@ -245,11 +255,16 @@ h1 {
 }
 
 .want-picker__title {
-  max-width: 24ch;
+  display: -webkit-box;
+  width: 24ch;
+  min-height: 2.85em;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
   text-align: center;
   font-family: Georgia, "Iowan Old Style", "Times New Roman", serif;
-  font-size: 1.18rem;
-  line-height: 1.2;
+  font-size: 1.08rem;
+  line-height: 1.25;
 }
 
 .want-picker__title:hover {

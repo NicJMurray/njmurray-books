@@ -88,7 +88,6 @@ export default function App() {
       <main className="main">
         <section className="intro">
           <div className="intro__copy">
-            <p className="eyebrow">Reading List</p>
             <h1>Reading List</h1>
             {favourites.length > 0 ? (
               <a className="jump-link" href="#favourites">
@@ -264,6 +263,7 @@ function WantToReadPicker({ books: pickerBooks }) {
 
   return (
     <aside className="want-picker" aria-label="Random want-to-read book">
+      <p className="want-picker__label">next read</p>
       <button
         type="button"
         className={isSpinning ? "want-picker__cover is-spinning" : "want-picker__cover"}
