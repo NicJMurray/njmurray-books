@@ -209,6 +209,54 @@ h1 {
   transform: translateY(10px);
 }
 
+.want-picker {
+  display: grid;
+  justify-items: center;
+  width: min(100%, 280px);
+  justify-self: end;
+  gap: 16px;
+}
+
+.want-picker__cover {
+  display: block;
+  width: min(100%, 178px);
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid rgba(21, 21, 21, 0.14);
+  border-radius: 6px;
+  background: linear-gradient(135deg, #f8efe1, #dfe8e4 52%, #cfd6e4);
+  box-shadow: 0 18px 34px rgba(21, 21, 21, 0.12);
+  transition:
+    transform 0.18s ease,
+    box-shadow 0.18s ease;
+}
+
+.want-picker__cover:hover,
+.want-picker__cover.is-spinning {
+  transform: translateY(-3px);
+  box-shadow: 0 22px 38px rgba(21, 21, 21, 0.16);
+}
+
+.want-picker__cover img {
+  display: block;
+  aspect-ratio: 2 / 3;
+  width: 100%;
+  object-fit: cover;
+}
+
+.want-picker__title {
+  max-width: 24ch;
+  text-align: center;
+  font-family: Georgia, "Iowan Old Style", "Times New Roman", serif;
+  font-size: 1.18rem;
+  line-height: 1.2;
+}
+
+.want-picker__title:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
 .toolbar {
   position: sticky;
   top: 64px;
@@ -406,6 +454,15 @@ h1 {
   -webkit-line-clamp: 2;
 }
 
+.book-title-link {
+  color: inherit;
+}
+
+.book-title-link:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 .book-card p,
 .book-row p {
   margin-bottom: 8px;
@@ -512,6 +569,10 @@ h1 {
   }
 
   .hero-shelf {
+    justify-self: start;
+  }
+
+  .want-picker {
     justify-self: start;
   }
 

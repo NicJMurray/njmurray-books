@@ -1,6 +1,7 @@
 import { BookOpen, Grid2X2, List, Search, Star } from "lucide-react";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import books from "./data/books.json";
+import wantToRead from "./data/wantToRead.json";
 
 const SORT_OPTIONS = [
   { value: "date-read", label: "Date read" },
@@ -52,6 +53,7 @@ export default function App() {
     () => sortBooks(books, "date-read").filter(getCoverUrl).slice(0, 8),
     [],
   );
+  const wantToReadBooks = useMemo(() => wantToRead.filter(getCoverUrl), []);
 
   return (
     <div className="site-shell">
@@ -61,14 +63,18 @@ export default function App() {
         <section className="intro">
           <div className="intro__copy">
             <p className="eyebrow">Reading List</p>
-            <h1>Nic's Reading List</h1>
+            <h1>Reading List</h1>
             {favourites.length > 0 ? (
               <a className="jump-link" href="#favourites">
                 Jump to favourites
               </a>
             ) : null}
           </div>
-          {heroBooks.length > 0 ? <HeroShelf books={heroBooks} /> : null}
+          {wantToReadBooks.length > 0 ? (
+            <WantToReadPicker books={wantToReadBooks} />
+          ) : heroBooks.length > 0 ? (
+            <HeroShelf books={heroBooks} />
+          ) : null}
         </section>
 
         <section className="toolbar" aria-label="Book controls">
@@ -185,6 +191,73 @@ function HeroShelf({ books: heroBooks }) {
   );
 }
 
+function WantToReadPicker({ books: pickerBooks }) {
+  const [selectedIndex, setSelectedIndex] = useState(() =>
+    getRandomIndex(pickerBooks.length),
+  );
+  const [isSpinning, setIsSpinning] = useState(false);
+  const timeouts = useRef([]);
+  const selectedBook = pickerBooks[selectedIndex] || pickerBooks[0];
+
+  useEffect(
+    () => () => {
+      timeouts.current.forEach(clearTimeout);
+    },
+    [],
+  );
+
+  if (!selectedBook) return null;
+
+  const cover = getCoverUrl(selectedBook);
+
+  function spin() {
+    if (pickerBooks.length <= 1) return;
+
+    timeouts.current.forEach(clearTimeout);
+    timeouts.current = [];
+    setIsSpinning(true);
+
+    const delays = [40, 50, 60, 75, 95, 125, 160, 210, 270];
+    let elapsed = 0;
+
+    delays.forEach((delay, index) => {
+      elapsed += delay;
+      const timeout = setTimeout(() => {
+        setSelectedIndex((currentIndex) =>
+          getRandomIndex(pickerBooks.length, currentIndex),
+        );
+
+        if (index === delays.length - 1) {
+          setIsSpinning(false);
+        }
+      }, elapsed);
+
+      timeouts.current.push(timeout);
+    });
+  }
+
+  return (
+    <aside className="want-picker" aria-label="Random want-to-read book">
+      <button
+        type="button"
+        className={isSpinning ? "want-picker__cover is-spinning" : "want-picker__cover"}
+        onClick={spin}
+        aria-label={`Pick a random want-to-read book. Current pick: ${selectedBook.title}`}
+      >
+        <img src={cover} alt={`Cover of ${selectedBook.title}`} loading="eager" />
+      </button>
+      <a
+        className="want-picker__title"
+        href={getGoodreadsUrl(selectedBook)}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {selectedBook.shortTitle || selectedBook.title}
+      </a>
+    </aside>
+  );
+}
+
 function EmptyState() {
   return (
     <section className="empty-state">
@@ -234,7 +307,9 @@ function BookCard({ book }) {
     <article className="book-card">
       <Cover book={book} />
       <div className="book-card__body">
-        <h3 title={book.title}>{book.shortTitle || book.title}</h3>
+        <h3 title={book.title}>
+          <BookTitleLink book={book}>{book.shortTitle || book.title}</BookTitleLink>
+        </h3>
         <p>{book.author}</p>
         <div className="book-meta">
           <Rating value={book.rating} />
@@ -251,7 +326,9 @@ function BookRow({ book }) {
       <Cover book={book} compact />
       <div className="book-row__body">
         <div>
-          <h3>{book.title}</h3>
+          <h3>
+            <BookTitleLink book={book}>{book.title}</BookTitleLink>
+          </h3>
           <p>
             {book.author}
             {book.additionalAuthors ? `, ${book.additionalAuthors}` : ""}
@@ -265,6 +342,19 @@ function BookRow({ book }) {
         </div>
       </div>
     </article>
+  );
+}
+
+function BookTitleLink({ book, children }) {
+  return (
+    <a
+      className="book-title-link"
+      href={getGoodreadsUrl(book)}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      {children}
+    </a>
   );
 }
 
@@ -436,6 +526,21 @@ function groupBy(bookList, getKey) {
 
 function getCoverUrl(book) {
   return book.localCover ? `/books/${book.localCover.replace(/^\/+/, "")}` : book.remoteCover;
+}
+
+function getGoodreadsUrl(book) {
+  return book.goodreadsUrl || `https://www.goodreads.com/book/show/${book.goodreadsId || book.id}`;
+}
+
+function getRandomIndex(length, excludedIndex = -1) {
+  if (length <= 1) return 0;
+
+  let nextIndex = Math.floor(Math.random() * length);
+  while (nextIndex === excludedIndex) {
+    nextIndex = Math.floor(Math.random() * length);
+  }
+
+  return nextIndex;
 }
 
 function getReadYear(book) {

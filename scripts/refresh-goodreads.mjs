@@ -4,9 +4,11 @@ import { parse as parseCsv } from "csv-parse/sync";
 import { XMLParser } from "fast-xml-parser";
 
 const BOOKS_PATH = "src/data/books.json";
+const WANT_TO_READ_PATH = "src/data/wantToRead.json";
 const DEFAULT_CSV_PATH = "data/goodreads_library_export.csv";
 const DEFAULT_SHELF = "read";
 const DEFAULT_GOODREADS_LIST_URL = "https://www.goodreads.com/review/list/89023673?shelf=read";
+const DEFAULT_WANT_TO_READ_LIST_URL = "https://www.goodreads.com/review/list/89023673?shelf=to-read";
 
 const args = new Map();
 for (let index = 2; index < process.argv.length; index += 1) {
@@ -31,11 +33,21 @@ const rssUrl =
   ) ||
   getRssUrlFromUserId(process.env.GOODREADS_USER_ID, process.env.GOODREADS_SHELF);
 
+const wantToReadRssUrl =
+  args.get("--want-rss") ||
+  process.env.GOODREADS_WANT_TO_READ_RSS_URL ||
+  getRssUrlFromListUrl(
+    args.get("--want-list") ||
+      process.env.GOODREADS_WANT_TO_READ_LIST_URL ||
+      DEFAULT_WANT_TO_READ_LIST_URL,
+  );
+
 const csvPath = args.get("--csv") || process.env.GOODREADS_CSV_PATH;
 
 const existingBooks = await readJson(BOOKS_PATH);
 let nextBooks = existingBooks;
 let importedCount = 0;
+let changed = false;
 
 if (csvPath || existsSync(DEFAULT_CSV_PATH)) {
   const resolvedCsvPath = csvPath || DEFAULT_CSV_PATH;
@@ -68,13 +80,40 @@ nextBooks = sortBooks(nextBooks);
 const before = JSON.stringify(existingBooks, null, 2);
 const after = JSON.stringify(nextBooks, null, 2);
 
-if (before === after) {
-  console.log(`No book changes detected. ${nextBooks.length} books already current.`);
-  process.exit(0);
+if (before !== after) {
+  await writeFile(BOOKS_PATH, `${after}\n`);
+  changed = true;
+  console.log(`Updated ${BOOKS_PATH} with ${nextBooks.length} books.`);
+} else {
+  console.log(`No read-shelf changes detected. ${nextBooks.length} books already current.`);
 }
 
-await writeFile(BOOKS_PATH, `${after}\n`);
-console.log(`Updated ${BOOKS_PATH} with ${nextBooks.length} books.`);
+if (wantToReadRssUrl) {
+  const existingWantToRead = existsSync(WANT_TO_READ_PATH)
+    ? await readJson(WANT_TO_READ_PATH)
+    : [];
+  const wantToReadBooks = sortBooks(
+    mergeBooks(existingWantToRead, await readGoodreadsRss(wantToReadRssUrl)),
+  );
+  importedCount += wantToReadBooks.length;
+
+  const wantBefore = JSON.stringify(existingWantToRead, null, 2);
+  const wantAfter = JSON.stringify(wantToReadBooks, null, 2);
+
+  if (wantBefore !== wantAfter) {
+    await writeFile(WANT_TO_READ_PATH, `${wantAfter}\n`);
+    changed = true;
+    console.log(`Updated ${WANT_TO_READ_PATH} with ${wantToReadBooks.length} books.`);
+  } else {
+    console.log(
+      `No want-to-read changes detected. ${wantToReadBooks.length} books already current.`,
+    );
+  }
+}
+
+if (!changed) {
+  process.exit(0);
+}
 
 async function readJson(filePath) {
   return JSON.parse(await readFile(filePath, "utf8"));
@@ -170,6 +209,7 @@ function normalizeCsvBook(row) {
     shelves: cleanString(row.Bookshelves),
     review: cleanString(row["My Review"]),
     readCount: toNumber(row["Read Count"]) || 1,
+    goodreadsUrl: getGoodreadsBookUrl(id),
     remoteCover: getOpenLibraryCover(isbn13, isbn),
   });
 }
@@ -199,6 +239,7 @@ function normalizeRssBook(item) {
     shelves: cleanString(item.user_shelves),
     review: cleanString(stripHtml(item.user_review)),
     readCount: 1,
+    goodreadsUrl: getGoodreadsBookUrl(goodreadsId),
     remoteCover:
       firstCoverUrl(
         item.book_large_image_url,
@@ -319,6 +360,10 @@ function getGoodreadsIdFromLink(link) {
 function getOpenLibraryCover(isbn13, isbn) {
   const value = isbn13 || isbn;
   return value ? `https://covers.openlibrary.org/b/isbn/${value}-L.jpg?default=false` : undefined;
+}
+
+function getGoodreadsBookUrl(goodreadsId) {
+  return goodreadsId ? `https://www.goodreads.com/book/show/${goodreadsId}` : undefined;
 }
 
 function firstCoverUrl(...urls) {
