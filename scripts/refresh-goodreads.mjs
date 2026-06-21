@@ -9,6 +9,8 @@ const DEFAULT_CSV_PATH = "data/goodreads_library_export.csv";
 const DEFAULT_SHELF = "read";
 const DEFAULT_GOODREADS_LIST_URL = "https://www.goodreads.com/review/list/89023673?shelf=read";
 const DEFAULT_WANT_TO_READ_LIST_URL = "https://www.goodreads.com/review/list/89023673?shelf=to-read";
+const GOODREADS_RSS_PER_PAGE = 200;
+const GOODREADS_MAX_RSS_PAGES = 10;
 
 const args = new Map();
 for (let index = 2; index < process.argv.length; index += 1) {
@@ -121,9 +123,12 @@ async function readJson(filePath) {
 
 function getRssUrlFromUserId(userId, shelf = DEFAULT_SHELF) {
   if (!userId) return "";
-  return `https://www.goodreads.com/review/list_rss/${encodeURIComponent(
-    userId,
-  )}?shelf=${encodeURIComponent(shelf || DEFAULT_SHELF)}`;
+  const url = new URL(
+    `https://www.goodreads.com/review/list_rss/${encodeURIComponent(userId)}`,
+  );
+  url.searchParams.set("shelf", shelf || DEFAULT_SHELF);
+  url.searchParams.set("per_page", String(GOODREADS_RSS_PER_PAGE));
+  return url.toString();
 }
 
 function getRssUrlFromListUrl(listUrl) {
@@ -152,6 +157,22 @@ async function readGoodreadsCsv(filePath) {
 }
 
 async function readGoodreadsRss(url) {
+  const books = [];
+  const baseUrl = new URL(url);
+  baseUrl.searchParams.set("per_page", String(GOODREADS_RSS_PER_PAGE));
+
+  for (let page = 1; page <= GOODREADS_MAX_RSS_PAGES; page += 1) {
+    baseUrl.searchParams.set("page", String(page));
+    const pageBooks = await readGoodreadsRssPage(baseUrl.toString());
+    books.push(...pageBooks);
+
+    if (pageBooks.length < GOODREADS_RSS_PER_PAGE) break;
+  }
+
+  return books;
+}
+
+async function readGoodreadsRssPage(url) {
   const response = await fetch(url, {
     headers: {
       "user-agent": "njmurray-books-refresh/1.0",

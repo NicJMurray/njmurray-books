@@ -2,6 +2,7 @@
 name = "njmurray-books"
 main = "worker/index.js"
 compatibility_date = "2026-05-05"
+workers_dev = false
 
 assets = { directory = "./dist", binding = "ASSETS" }
 
@@ -9,3 +10,6 @@ routes = [
   { pattern = "njmurray.com/books", zone_name = "njmurray.com" },
   { pattern = "njmurray.com/books/*", zone_name = "njmurray.com" },
 ]
+
+[triggers]
+crons = ["24 6 * * *"]

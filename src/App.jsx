@@ -1,7 +1,7 @@
 import { BookOpen, Grid2X2, List, Search, Star } from "lucide-react";
 import { useEffect, useMemo, useRef, useState } from "react";
-import books from "./data/books.json";
-import wantToRead from "./data/wantToRead.json";
+import staticBooks from "./data/books.json";
+import staticWantToRead from "./data/wantToRead.json";
 
 const SORT_OPTIONS = [
   { value: "date-read", label: "Date read" },
@@ -16,12 +16,35 @@ export default function App() {
   const [sortBy, setSortBy] = useState("date-read");
   const [viewMode, setViewMode] = useState("grid");
   const [query, setQuery] = useState("");
+  const [bookData, setBookData] = useState(staticBooks);
+  const [wantToReadData, setWantToReadData] = useState(staticWantToRead);
+
+  useEffect(() => {
+    let isActive = true;
+
+    async function refreshData() {
+      const [latestBooks, latestWantToRead] = await Promise.all([
+        fetchBookData("/books/api/books.json"),
+        fetchBookData("/books/api/want-to-read.json"),
+      ]);
+
+      if (!isActive) return;
+      if (latestBooks) setBookData(latestBooks);
+      if (latestWantToRead) setWantToReadData(latestWantToRead);
+    }
+
+    refreshData();
+
+    return () => {
+      isActive = false;
+    };
+  }, []);
 
   const filteredBooks = useMemo(() => {
     const search = query.trim().toLowerCase();
-    if (!search) return books;
+    if (!search) return bookData;
 
-    return books.filter((book) =>
+    return bookData.filter((book) =>
       [
         book.title,
         book.shortTitle,
@@ -35,7 +58,7 @@ export default function App() {
         .toLowerCase()
         .includes(search),
     );
-  }, [query]);
+  }, [bookData, query]);
 
   const sortedBooks = useMemo(
     () => sortBooks(filteredBooks, sortBy),
@@ -50,10 +73,13 @@ export default function App() {
     [filteredBooks],
   );
   const heroBooks = useMemo(
-    () => sortBooks(books, "date-read").filter(getCoverUrl).slice(0, 8),
-    [],
+    () => sortBooks(bookData, "date-read").filter(getCoverUrl).slice(0, 8),
+    [bookData],
   );
-  const wantToReadBooks = useMemo(() => wantToRead.filter(getCoverUrl), []);
+  const wantToReadBooks = useMemo(
+    () => wantToReadData.filter(getCoverUrl),
+    [wantToReadData],
+  );
 
   return (
     <div className="site-shell">
@@ -126,7 +152,7 @@ export default function App() {
           </div>
         </section>
 
-        {books.length === 0 ? (
+        {bookData.length === 0 ? (
           <EmptyState />
         ) : (
           <>
@@ -522,6 +548,20 @@ function groupBy(bookList, getKey) {
     groups[key].push(book);
     return groups;
   }, {});
+}
+
+async function fetchBookData(path) {
+  try {
+    const response = await fetch(path, {
+      headers: { Accept: "application/json" },
+    });
+    if (!response.ok) return undefined;
+
+    const data = await response.json();
+    return Array.isArray(data) ? data : undefined;
+  } catch {
+    return undefined;
+  }
 }
 
 function getCoverUrl(book) {
