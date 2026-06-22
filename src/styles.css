@@ -62,9 +62,6 @@ a {
 }
 
 .header {
-  position: sticky;
-  top: 0;
-  z-index: 20;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -255,9 +252,6 @@ h1 {
 }
 
 .toolbar {
-  position: sticky;
-  top: 64px;
-  z-index: 10;
   display: grid;
   grid-template-columns: minmax(220px, 1fr) auto auto;
   gap: 12px;
@@ -346,7 +340,7 @@ h1 {
 }
 
 .book-section {
-  scroll-margin-top: 132px;
+  scroll-margin-top: 28px;
   margin-bottom: 86px;
 }
 
@@ -579,7 +573,6 @@ h1 {
 
   .toolbar {
     grid-template-columns: 1fr;
-    top: 63px;
   }
 
   .select,
