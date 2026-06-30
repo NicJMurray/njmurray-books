@@ -84,8 +84,18 @@ a {
   font-weight: 750;
 }
 
-.brand svg {
-  color: var(--accent);
+.brand-mark {
+  display: grid;
+  width: 30px;
+  height: 30px;
+  place-items: center;
+  border: 1px solid var(--accent);
+  border-radius: 8px;
+  color: #fffdf8;
+  background: var(--accent);
+  font-family: Georgia, "Iowan Old Style", "Times New Roman", serif;
+  font-weight: 500;
+  line-height: 1;
 }
 
 .header nav,
@@ -607,6 +617,7 @@ h1 {
 
   .header nav {
     gap: 12px;
+    flex-wrap: wrap;
   }
 
   .main {

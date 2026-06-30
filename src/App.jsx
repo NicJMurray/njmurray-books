@@ -24,8 +24,8 @@ export default function App() {
 
     async function refreshData() {
       const [latestBooks, latestWantToRead] = await Promise.all([
-        fetchBookData("/books/api/books.json"),
-        fetchBookData("/books/api/want-to-read.json"),
+        fetchBookData("/api/books.json"),
+        fetchBookData("/api/want-to-read.json"),
       ]);
 
       if (!isActive) return;
@@ -188,14 +188,18 @@ function Header() {
         className="brand"
         aria-label="njmurray homepage"
       >
-        <BookOpen aria-hidden="true" size={20} />
+        <span className="brand-mark" aria-hidden="true">N</span>
         <span>njmurray</span>
       </a>
       <nav aria-label="Primary navigation">
         <a href="https://njmurray.com">Home</a>
-        <a href="/books/" aria-current="page">
+        <a href="https://books.njmurray.com" aria-current="page">
           Books
         </a>
+        <a href="https://playlist.njmurray.com">Playlist Finder</a>
+        <a href="https://playlists.njmurray.com">Playlists</a>
+        <a href="https://rare-words.njmurray.com">Rare Words</a>
+        <a href="https://github.com/NicJMurray" rel="noopener noreferrer" target="_blank">GitHub</a>
       </nav>
     </header>
   );
@@ -557,7 +561,7 @@ async function fetchBookData(path) {
 }
 
 function getCoverUrl(book) {
-  return book.localCover ? `/books/${book.localCover.replace(/^\/+/, "")}` : book.remoteCover;
+  return book.localCover ? `/${book.localCover.replace(/^\/+/, "")}` : book.remoteCover;
 }
 
 function getGoodreadsUrl(book) {

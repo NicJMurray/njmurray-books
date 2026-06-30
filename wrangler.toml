@@ -7,8 +7,7 @@ workers_dev = false
 assets = { directory = "./dist", binding = "ASSETS" }
 
 routes = [
-  { pattern = "njmurray.com/books", zone_name = "njmurray.com" },
-  { pattern = "njmurray.com/books/*", zone_name = "njmurray.com" },
+  { pattern = "books.njmurray.com", custom_domain = true },
 ]
 
 [triggers]

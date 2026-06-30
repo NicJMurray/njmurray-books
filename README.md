@@ -1,6 +1,6 @@
 # njmurray-books
 
-Editable source for the reading list at https://njmurray.com/books/.
+Editable source for the reading list at https://books.njmurray.com.
 
 The app is a Vite/React frontend served by the `njmurray-books` Cloudflare Worker. Book data lives in `src/data/books.json` and can be refreshed from Goodreads.
 
@@ -54,11 +54,8 @@ Put the CSV at `data/goodreads_library_export.csv`. CSV files are ignored so pri
 npm run deploy
 ```
 
-The Worker uses these routes:
+The Worker uses this custom domain:
 
-- `njmurray.com/books`
-- `njmurray.com/books/*`
+- `books.njmurray.com`
 
-## Recovery Notes
-
-This project was rebuilt from the live Cloudflare deployment. The recovered production bundle is no longer the editing surface; the editable app is under `src/`. The original source maps were not available from Cloudflare, so `metadata/` keeps the recovery provenance.
+Pushing to `main` also deploys through GitHub Actions. See [DEPLOYMENT.md](DEPLOYMENT.md) for the canonical URL, Worker name, and required secrets.

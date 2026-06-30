@@ -1,14 +1,14 @@
 import { XMLParser } from "fast-xml-parser";
 
-const BOOKS_PREFIX = "/books";
+const CANONICAL_ORIGIN = "https://books.njmurray.com";
 const GOODREADS_USER_ID = "89023673";
 const GOODREADS_CACHE_TTL_SECONDS = 60 * 60 * 24;
 const GOODREADS_CACHE_VERSION = "2026-06-21-per-page-200";
 const GOODREADS_RSS_PER_PAGE = 200;
 const GOODREADS_MAX_RSS_PAGES = 10;
 const GOODREADS_API_PATHS = new Map([
-  [`${BOOKS_PREFIX}/api/books.json`, "read"],
-  [`${BOOKS_PREFIX}/api/want-to-read.json`, "to-read"],
+  ["/api/books.json", "read"],
+  ["/api/want-to-read.json", "to-read"],
 ]);
 
 const parser = new XMLParser({
@@ -20,22 +20,12 @@ export default {
   async fetch(request, env, ctx) {
     const url = new URL(request.url);
 
-    if (url.pathname === BOOKS_PREFIX) {
-      url.pathname = `${BOOKS_PREFIX}/`;
-      return Response.redirect(url.toString(), 308);
-    }
-
-    if (!url.pathname.startsWith(`${BOOKS_PREFIX}/`)) {
-      return new Response("Not Found", { status: 404 });
-    }
-
     const shelf = GOODREADS_API_PATHS.get(url.pathname);
     if (shelf) {
       return getGoodreadsShelfResponse(request, shelf, ctx);
     }
 
     const assetUrl = new URL(request.url);
-    assetUrl.pathname = url.pathname.slice(BOOKS_PREFIX.length) || "/";
 
     const assetResponse = await env.ASSETS.fetch(new Request(assetUrl, request));
     if (assetResponse.status !== 404 || hasFileExtension(assetUrl.pathname)) {
@@ -68,7 +58,7 @@ async function getGoodreadsShelfResponse(request, shelf, ctx) {
 async function refreshGoodreadsShelfCache(path, shelf) {
   const response = await buildGoodreadsShelfResponse(shelf);
   if (response.ok) {
-    const cacheUrl = new URL(`https://njmurray.com${path}`);
+    const cacheUrl = new URL(`${CANONICAL_ORIGIN}${path}`);
     cacheUrl.search = `?v=${GOODREADS_CACHE_VERSION}`;
     await caches.default.put(new Request(cacheUrl.toString()), response.clone());
   }

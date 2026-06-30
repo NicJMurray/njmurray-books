@@ -2,6 +2,7 @@ node_modules/
 .wrangler/
 .publish/
 dist/
+metadata/
 data/*.csv
 .dev.vars
 *.log
