@@ -5,10 +5,13 @@
 - Canonical URL: `https://books.njmurray.com`
 - Cloudflare type: Worker with Static Assets
 - Cloudflare Worker name: `njmurray-books`
-- Deploy command: `npm run deploy`
+- Deploy method: GitHub Actions + Wrangler
+- Local/manual deploy command: `npm run deploy`
 - Wrangler command: `npm run build && wrangler deploy`
 
 ## GitHub Actions
+
+This repo is a Worker project, so it keeps the Wrangler GitHub Actions workflow.
 
 Pushing to `main` deploys through `.github/workflows/deploy.yml`.
 
@@ -19,7 +22,7 @@ CLOUDFLARE_API_TOKEN
 CLOUDFLARE_ACCOUNT_ID
 ```
 
-The daily Goodreads workflow in `.github/workflows/daily-refresh.yml` still refreshes `src/data/books.json` and `src/data/wantToRead.json`, commits changes when needed, and deploys when Cloudflare credentials are present.
+The daily Goodreads workflow in `.github/workflows/daily-refresh.yml` refreshes `src/data/books.json` and `src/data/wantToRead.json`, commits changes when needed, and deploys when Cloudflare credentials are present.
 
 Goodreads source variables remain repository variables, not committed secrets:
 
@@ -30,3 +33,7 @@ GOODREADS_RSS_URL
 GOODREADS_USER_ID
 GOODREADS_SHELF
 ```
+
+## Note
+
+The static Pages repos use Cloudflare Git integration and do not need GitHub Actions deploy workflows. This Worker repo is different and still uses Wrangler.
