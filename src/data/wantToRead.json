@@ -1,5 +1,21 @@
 [
   {
+    "id": "119945",
+    "goodreadsId": "119945",
+    "title": "The Time of the Hero",
+    "shortTitle": "The Time of the Hero",
+    "author": "Mario Vargas Llosa",
+    "isbn": "0571173209",
+    "rating": 0,
+    "pageCount": 379,
+    "yearPublished": 1962,
+    "dateAdded": "2026-07-02",
+    "shelves": "to-read",
+    "readCount": 1,
+    "goodreadsUrl": "https://www.goodreads.com/book/show/119945",
+    "remoteCover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1347911294l/119945.jpg"
+  },
+  {
     "id": "58678702",
     "goodreadsId": "58678702",
     "title": "Simple Passion",
