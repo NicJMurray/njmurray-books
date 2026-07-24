@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-labelledby="title desc">
+  <title id="title">Reading List</title>
+  <desc id="desc">Project banner for the Goodreads-backed reading-list application.</desc>
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#cfd8d0" stroke-width="1" opacity=".55"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="320" fill="#f4f6f3"/>
+  <rect width="1200" height="320" fill="url(#grid)"/>
+  <rect x="64" y="48" width="48" height="48" rx="10" fill="#b5483c"/>
+  <text x="88" y="81" text-anchor="middle" fill="#fffef9" font-family="Georgia, serif" font-size="25" font-weight="700">N</text>
+  <text x="64" y="139" fill="#66716b" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="700" letter-spacing="3">BOOKS / DATA</text>
+  <text x="64" y="207" fill="#171a1f" font-family="Georgia, serif" font-size="54" font-weight="500">Reading List</text>
+  <text x="66" y="249" fill="#66716b" font-family="Inter, Arial, sans-serif" font-size="20">books.njmurray.com</text>
+  <path d="M911 92h92c25 0 44 13 44 32v111c0-19-19-32-44-32h-92z" fill="#fffef9" stroke="#b5483c" stroke-width="3"/>
+  <path d="M1047 124c0-19 19-32 44-32h57v111h-57c-25 0-44 13-44 32z" fill="#fffef9" stroke="#b5483c" stroke-width="3"/>
+  <path d="M1047 124v111" stroke="#b5483c" stroke-width="3"/>
+  <rect y="310" width="1200" height="10" fill="#b5483c"/>
+</svg>
