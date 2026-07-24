@@ -1,4 +1,6 @@
-# njmurray books
+![Reading List](.github/readme-banner.svg)
+
+# Reading List
 
 Reading-list application at `books.njmurray.com`. A React interface displays read and want-to-read Goodreads shelves, while a Cloudflare Worker provides live RSS-derived data and serves the built frontend.
 
