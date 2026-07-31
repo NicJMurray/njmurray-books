@@ -1,5 +1,20 @@
 [
   {
+    "id": "23289",
+    "goodreadsId": "23289",
+    "title": "The Dead",
+    "shortTitle": "The Dead",
+    "author": "James Joyce",
+    "rating": 0,
+    "pageCount": 100,
+    "yearPublished": 1914,
+    "dateAdded": "2026-07-30",
+    "shelves": "to-read",
+    "readCount": 1,
+    "goodreadsUrl": "https://www.goodreads.com/book/show/23289",
+    "remoteCover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1702545862l/23289._SX318_.jpg"
+  },
+  {
     "id": "61714633",
     "goodreadsId": "61714633",
     "title": "The Wager: A Tale of Shipwreck, Mutiny and Murder",
