@@ -1,5 +1,21 @@
 [
   {
+    "id": "17143",
+    "goodreadsId": "17143",
+    "title": "Go Tell It on the Mountain",
+    "shortTitle": "Go Tell It on the Mountain",
+    "author": "James Baldwin",
+    "isbn": "0141185910",
+    "rating": 4,
+    "pageCount": 256,
+    "yearPublished": 1953,
+    "dateRead": "2026-08-13",
+    "dateAdded": "2026-08-13",
+    "readCount": 1,
+    "goodreadsUrl": "https://www.goodreads.com/book/show/17143",
+    "remoteCover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1701361318l/17143._SX318_.jpg"
+  },
+  {
     "id": "50202953",
     "goodreadsId": "50202953",
     "title": "Piranesi",
