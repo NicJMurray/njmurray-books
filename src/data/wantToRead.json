@@ -1,5 +1,21 @@
 [
   {
+    "id": "89231",
+    "goodreadsId": "89231",
+    "title": "Augustus",
+    "shortTitle": "Augustus",
+    "author": "John  Williams",
+    "isbn": "1400076730",
+    "rating": 0,
+    "pageCount": 336,
+    "yearPublished": 1972,
+    "dateAdded": "2026-08-19",
+    "shelves": "to-read",
+    "readCount": 1,
+    "goodreadsUrl": "https://www.goodreads.com/book/show/89231",
+    "remoteCover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1320557188l/89231.jpg"
+  },
+  {
     "id": "803547",
     "goodreadsId": "803547",
     "title": "The Grasshopper: Games, Life and Utopia",
