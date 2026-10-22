@@ -339,3 +339,8 @@ Files are rewritten only when the pretty-printed JSON content actually changes.
 - The live cache and committed snapshots are separate; refreshing one does not refresh the other.
 - The browser does not persist sort, view, search, or picker state.
 - Goodreads data is read-only; the application never writes ratings, shelves, or reviews back to Goodreads.
+
+
+## Updating and publishing
+
+The live app is https://books.njmurray.com/. Make changes in this repository, run its checks, and push to `main`. GitHub Actions publishes the change to Cloudflare automatically after a successful build. See [DEPLOYMENT.md](DEPLOYMENT.md) for the exact commands, resources, and production checks.

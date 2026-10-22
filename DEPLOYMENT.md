@@ -17,14 +17,14 @@
 
 Pushing `main` runs `.github/workflows/deploy.yml`, which installs locked dependencies, builds the application, and publishes this Worker through Wrangler. The workflow targets the known Cloudflare account directly and requires only `CLOUDFLARE_API_TOKEN` as a repository secret. A missing token fails explicitly.
 
-The pipeline is **configured, awaiting successful credential validation and production verification**. The previous deployment failed at Wrangler; a green production page alone does not prove the current commit was published. Deployment concurrency prevents overlapping releases.
+The pipeline was verified on 23 October 2026 with a successful GitHub Actions deployment to the existing production Worker. The deployment token is stored as an encrypted repository secret; it must never be added to source. Deployment concurrency prevents overlapping releases. Check the current Actions result and live site for each subsequent change.
 
 ## Editing and publishing
 
 1. Change this repository and update the README when behaviour changes.
 2. Run `npm ci` and `npm run build`.
 3. Commit and push checked source to `main`.
-4. Follow the Cloudflare build for that exact commit, then verify the production page and a read-only Goodreads API request.
+4. Follow the GitHub Actions deployment for that exact commit, then verify the production page and a read-only Goodreads API request.
 
 `npm run deploy` is the manual fallback; it builds and invokes Wrangler using the local Cloudflare sign-in. A manual upload does not verify automatic publishing.
 
@@ -37,7 +37,7 @@ There are two separate refresh mechanisms:
 - The Worker's `24 6 * * *` UTC cron refreshes the live edge cache.
 - `.github/workflows/daily-refresh.yml` refreshes and commits `src/data/books.json` and `src/data/wantToRead.json`.
 
-Preserve the daily workflow when changing deployment paths. Its most recent observed run succeeded at refreshing and building, but **skipped Cloudflare deployment** because at least one Cloudflare credential was missing. A green refresh workflow does not establish that production updated. The updated refresh workflow explicitly fails at deployment if the token is missing. Verify that a refresh commit reaches production too.
+Preserve the daily workflow when changing deployment paths. The deployment credential was configured on 23 October 2026. The refresh workflow now deploys with the same token as the verified push workflow and explicitly fails if that token is unavailable, instead of silently skipping deployment. Verify that each future refresh run reaches production too.
 
 The daily workflow targets the same known Cloudflare account and uses the same token secret as the push deployment. Goodreads import settings are repository variables: `GOODREADS_LIST_URL`, `GOODREADS_WANT_TO_READ_LIST_URL`, `GOODREADS_RSS_URL`, `GOODREADS_USER_ID`, and `GOODREADS_SHELF`.
 
