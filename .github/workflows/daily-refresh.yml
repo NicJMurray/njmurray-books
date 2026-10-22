@@ -8,6 +8,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: njmurray-books-production
+  cancel-in-progress: false
+
 jobs:
   refresh:
     runs-on: ubuntu-latest
@@ -18,14 +22,14 @@ jobs:
       GOODREADS_USER_ID: ${{ vars.GOODREADS_USER_ID }}
       GOODREADS_SHELF: ${{ vars.GOODREADS_SHELF }}
       CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-      CLOUDFLARE_ACCOUNT_ID: ${{ vars.CLOUDFLARE_ACCOUNT_ID || secrets.CLOUDFLARE_ACCOUNT_ID }}
+      CLOUDFLARE_ACCOUNT_ID: "22c1482ec05957092be7a2df424c4543"
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Setup Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
           node-version: 22
           cache: npm
@@ -52,10 +56,13 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Deploy to Cloudflare
-        if: env.CLOUDFLARE_API_TOKEN != '' && env.CLOUDFLARE_ACCOUNT_ID != ''
-        run: npx wrangler deploy
+      - name: Check deployment token
+        shell: bash
+        run: |
+          if [[ -z "$CLOUDFLARE_API_TOKEN" ]]; then
+            echo "::error::Snapshot refresh completed, but CLOUDFLARE_API_TOKEN must be set as a repository secret to deploy."
+            exit 1
+          fi
 
-      - name: Skip Cloudflare deploy
-        if: env.CLOUDFLARE_API_TOKEN == '' || env.CLOUDFLARE_ACCOUNT_ID == ''
-        run: echo "Add CLOUDFLARE_API_TOKEN and CLOUDFLARE_ACCOUNT_ID secrets to deploy from GitHub Actions."
+      - name: Deploy to Cloudflare
+        run: npx wrangler deploy

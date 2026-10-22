@@ -1,39 +1,48 @@
 # Deployment
 
-- Repo: `NicJMurray/njmurray-books`
-- Purpose: Reading List app with Goodreads refresh data
-- Canonical URL: `https://books.njmurray.com`
-- Cloudflare type: Worker with Static Assets
-- Cloudflare Worker name: `njmurray-books`
-- Deploy method: GitHub Actions + Wrangler
-- Local/manual deploy command: `npm run deploy`
-- Wrangler command: `npm run build && wrangler deploy`
+| Setting | Value |
+| --- | --- |
+| Repository | `NicJMurray/njmurray-books` |
+| Production branch | `main` |
+| Live application | <https://books.njmurray.com> |
+| Cloudflare Worker | `njmurray-books` |
+| Configuration | `wrangler.toml` in the repository root |
+| Worker entry point | `worker/index.js` |
+| Static assets | `dist/`, bound as `ASSETS` |
+| Install | `npm ci` |
+| Build | `npm run build` |
+| Deploy | `npx wrangler deploy` after the build |
 
-## GitHub Actions
+## GitHub to Cloudflare
 
-This repo is a Worker project, so it keeps the Wrangler GitHub Actions workflow.
+Pushing `main` runs `.github/workflows/deploy.yml`, which installs locked dependencies, builds the application, and publishes this Worker through Wrangler. The workflow targets the known Cloudflare account directly and requires only `CLOUDFLARE_API_TOKEN` as a repository secret. A missing token fails explicitly.
 
-Pushing to `main` deploys through `.github/workflows/deploy.yml`.
+The pipeline is **configured, awaiting successful credential validation and production verification**. The previous deployment failed at Wrangler; a green production page alone does not prove the current commit was published. Deployment concurrency prevents overlapping releases.
 
-Required repository secrets:
+## Editing and publishing
 
-```text
-CLOUDFLARE_API_TOKEN
-CLOUDFLARE_ACCOUNT_ID
-```
+1. Change this repository and update the README when behaviour changes.
+2. Run `npm ci` and `npm run build`.
+3. Commit and push checked source to `main`.
+4. Follow the Cloudflare build for that exact commit, then verify the production page and a read-only Goodreads API request.
 
-The daily Goodreads workflow in `.github/workflows/daily-refresh.yml` refreshes `src/data/books.json` and `src/data/wantToRead.json`, commits changes when needed, and deploys when Cloudflare credentials are present.
+`npm run deploy` is the manual fallback; it builds and invokes Wrangler using the local Cloudflare sign-in. A manual upload does not verify automatic publishing.
 
-Goodreads source variables remain repository variables, not committed secrets:
+The homepage links to this independent application, so the existing link opens the latest successful deployment without a homepage rebuild.
 
-```text
-GOODREADS_LIST_URL
-GOODREADS_WANT_TO_READ_LIST_URL
-GOODREADS_RSS_URL
-GOODREADS_USER_ID
-GOODREADS_SHELF
-```
+## Goodreads refreshes
 
-## Note
+There are two separate refresh mechanisms:
 
-The static Pages repos use Cloudflare Git integration and do not need GitHub Actions deploy workflows. This Worker repo is different and still uses Wrangler.
+- The Worker's `24 6 * * *` UTC cron refreshes the live edge cache.
+- `.github/workflows/daily-refresh.yml` refreshes and commits `src/data/books.json` and `src/data/wantToRead.json`.
+
+Preserve the daily workflow when changing deployment paths. Its most recent observed run succeeded at refreshing and building, but **skipped Cloudflare deployment** because at least one Cloudflare credential was missing. A green refresh workflow does not establish that production updated. The updated refresh workflow explicitly fails at deployment if the token is missing. Verify that a refresh commit reaches production too.
+
+The daily workflow targets the same known Cloudflare account and uses the same token secret as the push deployment. Goodreads import settings are repository variables: `GOODREADS_LIST_URL`, `GOODREADS_WANT_TO_READ_LIST_URL`, `GOODREADS_RSS_URL`, `GOODREADS_USER_ID`, and `GOODREADS_SHELF`.
+
+For an intentional snapshot update, use `npm run refresh:goodreads`. This contacts Goodreads and changes tracked snapshots; it is separate from ordinary frontend validation.
+
+## Runtime configuration
+
+The Worker uses `ASSETS`, the `books.njmurray.com` custom domain, and the daily cron in `wrangler.toml`. It does not use KV or a database. Preserve these settings and the current compatibility date when deploying. Runtime Goodreads endpoints are maintained in `worker/index.js`; snapshot import configuration belongs in the refresh script or repository variables.
