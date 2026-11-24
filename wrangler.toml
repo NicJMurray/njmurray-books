@@ -9,6 +9,3 @@ assets = { directory = "./dist", binding = "ASSETS" }
 routes = [
   { pattern = "books.njmurray.com", custom_domain = true },
 ]
-
-[triggers]
-crons = ["24 6 * * *"]

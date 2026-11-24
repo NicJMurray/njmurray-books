@@ -14,13 +14,12 @@ concurrency:
 
 jobs:
   refresh:
+    # Goodreads retired its built-in feeds. Resume only when both replacements are configured.
+    if: ${{ vars.GOODREADS_RSS_URL != '' && vars.GOODREADS_WANT_TO_READ_RSS_URL != '' }}
     runs-on: ubuntu-latest
     env:
-      GOODREADS_LIST_URL: ${{ vars.GOODREADS_LIST_URL }}
-      GOODREADS_WANT_TO_READ_LIST_URL: ${{ vars.GOODREADS_WANT_TO_READ_LIST_URL }}
       GOODREADS_RSS_URL: ${{ vars.GOODREADS_RSS_URL }}
-      GOODREADS_USER_ID: ${{ vars.GOODREADS_USER_ID }}
-      GOODREADS_SHELF: ${{ vars.GOODREADS_SHELF }}
+      GOODREADS_WANT_TO_READ_RSS_URL: ${{ vars.GOODREADS_WANT_TO_READ_RSS_URL }}
       CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
       CLOUDFLARE_ACCOUNT_ID: "22c1482ec05957092be7a2df424c4543"
 

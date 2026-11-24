@@ -7,8 +7,6 @@ const BOOKS_PATH = "src/data/books.json";
 const WANT_TO_READ_PATH = "src/data/wantToRead.json";
 const DEFAULT_CSV_PATH = "data/goodreads_library_export.csv";
 const DEFAULT_SHELF = "read";
-const DEFAULT_GOODREADS_LIST_URL = "https://www.goodreads.com/review/list/89023673?shelf=read";
-const DEFAULT_WANT_TO_READ_LIST_URL = "https://www.goodreads.com/review/list/89023673?shelf=to-read";
 const GOODREADS_RSS_PER_PAGE = 200;
 const GOODREADS_MAX_RSS_PAGES = 10;
 
@@ -29,9 +27,7 @@ const rssUrl =
   args.get("--rss") ||
   process.env.GOODREADS_RSS_URL ||
   getRssUrlFromListUrl(
-    args.get("--list") ||
-      process.env.GOODREADS_LIST_URL ||
-      DEFAULT_GOODREADS_LIST_URL,
+    args.get("--list") || process.env.GOODREADS_LIST_URL,
   ) ||
   getRssUrlFromUserId(process.env.GOODREADS_USER_ID, process.env.GOODREADS_SHELF);
 
@@ -39,82 +35,45 @@ const wantToReadRssUrl =
   args.get("--want-rss") ||
   process.env.GOODREADS_WANT_TO_READ_RSS_URL ||
   getRssUrlFromListUrl(
-    args.get("--want-list") ||
-      process.env.GOODREADS_WANT_TO_READ_LIST_URL ||
-      DEFAULT_WANT_TO_READ_LIST_URL,
+    args.get("--want-list") || process.env.GOODREADS_WANT_TO_READ_LIST_URL,
   );
 
 const csvPath = args.get("--csv") || process.env.GOODREADS_CSV_PATH;
 
-const existingBooks = await readJson(BOOKS_PATH);
-let nextBooks = existingBooks;
-let importedCount = 0;
-let changed = false;
+const resolvedCsvPath = csvPath || (existsSync(DEFAULT_CSV_PATH) ? DEFAULT_CSV_PATH : "");
+if (!resolvedCsvPath && !rssUrl && !wantToReadRssUrl) {
+  throw new Error("Provide a Goodreads library export with --csv or configure a replacement RSS feed.");
+}
 
-if (csvPath || existsSync(DEFAULT_CSV_PATH)) {
-  const resolvedCsvPath = csvPath || DEFAULT_CSV_PATH;
-  if (existsSync(resolvedCsvPath)) {
-    const csvBooks = await readGoodreadsCsv(resolvedCsvPath);
-    nextBooks = mergeBooks(nextBooks, csvBooks);
-    importedCount += csvBooks.length;
-    console.log(`Imported ${csvBooks.length} books from ${resolvedCsvPath}`);
-  } else {
-    console.log(`CSV file not found at ${resolvedCsvPath}; skipping CSV import`);
+const csvShelves = resolvedCsvPath ? await readGoodreadsCsv(resolvedCsvPath) : null;
+const readRssBooks = rssUrl ? await readGoodreadsRss(rssUrl) : null;
+const wantRssBooks = wantToReadRssUrl ? await readGoodreadsRss(wantToReadRssUrl) : null;
+
+if (csvShelves || readRssBooks) {
+  await updateShelf(BOOKS_PATH, csvShelves?.get("read"), readRssBooks);
+}
+
+if (csvShelves || wantRssBooks) {
+  await updateShelf(WANT_TO_READ_PATH, csvShelves?.get("to-read"), wantRssBooks);
+}
+
+async function updateShelf(path, csvBooks, rssBooks) {
+  const existing = existsSync(path) ? await readJson(path) : [];
+  let books = existing;
+  if (csvBooks) {
+    const csvIds = new Set(csvBooks.map(getBookKey));
+    books = mergeBooks(existing.filter((book) => csvIds.has(getBookKey(book))), csvBooks, true);
   }
-}
+  if (rssBooks) books = mergeBooks(books, rssBooks);
 
-if (rssUrl) {
-  const rssBooks = await readGoodreadsRss(rssUrl);
-  nextBooks = mergeBooks(nextBooks, rssBooks);
-  importedCount += rssBooks.length;
-  console.log(`Imported ${rssBooks.length} books from Goodreads RSS`);
-}
-
-if (importedCount === 0) {
-  console.log(
-    "No Goodreads source configured. Set GOODREADS_LIST_URL, GOODREADS_RSS_URL, GOODREADS_USER_ID, or pass --csv.",
-  );
-  process.exit(0);
-}
-
-nextBooks = sortBooks(nextBooks);
-
-const before = JSON.stringify(existingBooks, null, 2);
-const after = JSON.stringify(nextBooks, null, 2);
-
-if (before !== after) {
-  await writeFile(BOOKS_PATH, `${after}\n`);
-  changed = true;
-  console.log(`Updated ${BOOKS_PATH} with ${nextBooks.length} books.`);
-} else {
-  console.log(`No read-shelf changes detected. ${nextBooks.length} books already current.`);
-}
-
-if (wantToReadRssUrl) {
-  const existingWantToRead = existsSync(WANT_TO_READ_PATH)
-    ? await readJson(WANT_TO_READ_PATH)
-    : [];
-  const wantToReadBooks = sortBooks(
-    mergeBooks(existingWantToRead, await readGoodreadsRss(wantToReadRssUrl)),
-  );
-  importedCount += wantToReadBooks.length;
-
-  const wantBefore = JSON.stringify(existingWantToRead, null, 2);
-  const wantAfter = JSON.stringify(wantToReadBooks, null, 2);
-
-  if (wantBefore !== wantAfter) {
-    await writeFile(WANT_TO_READ_PATH, `${wantAfter}\n`);
-    changed = true;
-    console.log(`Updated ${WANT_TO_READ_PATH} with ${wantToReadBooks.length} books.`);
-  } else {
-    console.log(
-      `No want-to-read changes detected. ${wantToReadBooks.length} books already current.`,
-    );
+  const next = JSON.stringify(sortBooks(books), null, 2);
+  if (JSON.stringify(existing, null, 2) === next) {
+    console.log(`No changes to ${path}. ${books.length} books already current.`);
+    return;
   }
-}
 
-if (!changed) {
-  process.exit(0);
+  await writeFile(path, `${next}\n`);
+  console.log(`Updated ${path} with ${books.length} books.`);
 }
 
 async function readJson(filePath) {
@@ -144,16 +103,29 @@ function getRssUrlFromListUrl(listUrl) {
 async function readGoodreadsCsv(filePath) {
   const raw = await readFile(filePath, "utf8");
   const rows = parseCsv(raw, {
-    columns: true,
+    columns: (headers) => {
+      for (const header of ["Book Id", "Title", "Author", "Exclusive Shelf"]) {
+        if (!headers.includes(header)) {
+          throw new Error(`Invalid Goodreads export. Missing column: ${header}`);
+        }
+      }
+      return headers;
+    },
     bom: true,
     skip_empty_lines: true,
     relax_quotes: true,
     trim: true,
   });
 
-  return rows
-    .map(normalizeCsvBook)
-    .filter(Boolean);
+  if (rows.length === 0) throw new Error("The Goodreads export contains no books.");
+
+  const shelves = new Map([["read", []], ["to-read", []]]);
+  for (const row of rows) {
+    const shelf = shelves.get(cleanString(row["Exclusive Shelf"]).toLowerCase());
+    if (shelf) shelf.push(normalizeCsvBook(row));
+  }
+  console.log(`Read Goodreads library export from ${filePath}.`);
+  return shelves;
 }
 
 async function readGoodreadsRss(url) {
@@ -191,7 +163,9 @@ async function readGoodreadsRssPage(url) {
     isArray: (_name, jpath) => jpath === "rss.channel.item",
   });
   const parsed = parser.parse(xml);
-  const items = parsed?.rss?.channel?.item ?? [];
+  const channel = parsed?.rss?.channel;
+  if (!channel) throw new Error("The replacement feed did not return an RSS channel.");
+  const items = channel.item ?? [];
 
   return items
     .map(normalizeRssBook)
@@ -199,16 +173,15 @@ async function readGoodreadsRssPage(url) {
 }
 
 function normalizeCsvBook(row) {
-  const exclusiveShelf = cleanString(row["Exclusive Shelf"]).toLowerCase();
-  if (exclusiveShelf && exclusiveShelf !== "read") return null;
-
   const id = cleanString(row["Book Id"]);
   const isbn = sanitizeIsbn(row.ISBN);
   const isbn13 = sanitizeIsbn(row.ISBN13);
   const title = cleanString(row.Title);
   const author = cleanString(row.Author);
 
-  if (!id || !title || !author) return null;
+  if (!id || !title || !author) {
+    throw new Error("A Goodreads export row is missing a book ID, title, or author.");
+  }
 
   return cleanBook({
     id,
@@ -229,7 +202,7 @@ function normalizeCsvBook(row) {
     dateAdded: toDate(row["Date Added"]),
     shelves: cleanString(row.Bookshelves),
     review: cleanString(row["My Review"]),
-    readCount: toNumber(row["Read Count"]) || 1,
+    readCount: toNumber(row["Read Count"]) ?? (row["Exclusive Shelf"] === "read" ? 1 : 0),
     goodreadsUrl: getGoodreadsBookUrl(id),
     remoteCover: getOpenLibraryCover(isbn13, isbn),
   });
@@ -271,7 +244,7 @@ function normalizeRssBook(item) {
   });
 }
 
-function mergeBooks(existingBooks, incomingBooks) {
+function mergeBooks(existingBooks, incomingBooks, preferExistingCover = false) {
   const booksById = new Map();
 
   for (const book of existingBooks) {
@@ -281,13 +254,13 @@ function mergeBooks(existingBooks, incomingBooks) {
   for (const incoming of incomingBooks) {
     const key = getBookKey(incoming);
     const existing = booksById.get(key);
-    booksById.set(key, mergeBook(existing, incoming));
+    booksById.set(key, mergeBook(existing, incoming, preferExistingCover));
   }
 
   return [...booksById.values()];
 }
 
-function mergeBook(existing = {}, incoming) {
+function mergeBook(existing = {}, incoming, preferExistingCover) {
   const merged = {
     ...existing,
     ...incoming,
@@ -300,6 +273,8 @@ function mergeBook(existing = {}, incoming) {
     "pageCount",
     "yearPublished",
     "originalYear",
+    "isbn",
+    "isbn13",
     "shelves",
     "review",
     "localCover",
@@ -309,7 +284,7 @@ function mergeBook(existing = {}, incoming) {
     }
   }
 
-  if (isPlaceholderCover(incoming.remoteCover) && existing.remoteCover) {
+  if ((preferExistingCover || isPlaceholderCover(incoming.remoteCover)) && !isPlaceholderCover(existing.remoteCover)) {
     merged.remoteCover = existing.remoteCover;
   }
 

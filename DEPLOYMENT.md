@@ -32,17 +32,10 @@ The homepage links to this independent application, so the existing link opens t
 
 ## Goodreads refreshes
 
-There are two separate refresh mechanisms:
+Goodreads retired its RSS feeds in October 2026. Import a Goodreads library CSV with the command in the [README](README.md#committed-snapshot-refresh), then push the two updated snapshots to publish them. The CSV stays local.
 
-- The Worker's `24 6 * * *` UTC cron refreshes the live edge cache.
-- `.github/workflows/daily-refresh.yml` refreshes and commits `src/data/books.json` and `src/data/wantToRead.json`.
-
-Preserve the daily workflow when changing deployment paths. The deployment credential was configured on 23 October 2026. The refresh workflow now deploys with the same token as the verified push workflow and explicitly fails if that token is unavailable, instead of silently skipping deployment. Verify that each future refresh run reaches production too.
-
-The daily workflow targets the same known Cloudflare account and uses the same token secret as the push deployment. Goodreads import settings are repository variables: `GOODREADS_LIST_URL`, `GOODREADS_WANT_TO_READ_LIST_URL`, `GOODREADS_RSS_URL`, `GOODREADS_USER_ID`, and `GOODREADS_SHELF`.
-
-For an intentional snapshot update, use `npm run refresh:goodreads`. This contacts Goodreads and changes tracked snapshots; it is separate from ordinary frontend validation.
+The daily workflow is retained and skips its job unless both replacement feed variables are set. If replacement feeds are configured, the workflow imports them and publishes using the same Cloudflare deployment credential as the push workflow.
 
 ## Runtime configuration
 
-The Worker uses `ASSETS`, the `books.njmurray.com` custom domain, and the daily cron in `wrangler.toml`. It does not use KV or a database. Preserve these settings and the current compatibility date when deploying. Runtime Goodreads endpoints are maintained in `worker/index.js`; snapshot import configuration belongs in the refresh script or repository variables.
+The Worker uses the `ASSETS` binding and the `books.njmurray.com` custom domain. It serves both JSON APIs from the snapshots bundled at deploy time. Preserve the binding, domain and compatibility date when deploying.
